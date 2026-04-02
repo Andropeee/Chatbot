@@ -204,7 +204,7 @@ export function ChatWidget() {
       <div
         role="dialog"
         aria-label="5elements Support Chat"
-        className="fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50 overflow-hidden"
+        className="chat-widget fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50 overflow-hidden"
       >
         {/* ── Header ─────────────────────────────────────────────── */}
         <div className="bg-[#0d0d0d] text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">

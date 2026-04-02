@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 5elements brand font — matches website typography.css */
+.chat-widget {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
 
 /* Smooth scrollbar for chat messages */
 .overflow-y-auto {
