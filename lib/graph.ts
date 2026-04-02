@@ -1,205 +1,88 @@
 /**
- * LangGraph-style agent for 5elements chatbot.
+ * Lightweight agent for 5elements chatbot.
+ * Calls DeepSeek API directly via fetch — no LangChain, no cold-start timeout.
  *
- * Pipeline:  retrieve → classify → answer | escalate
- *
- * Uses DeepSeek (€0 via OpenAI-compatible API) for LLM calls.
- * Product retrieval uses keyword search from data/products.json (no embeddings needed).
- *
- * Designed to run inside Vercel API routes (Node.js runtime).
+ * Pipeline: retrieve -> classify -> answer | escalate
  */
 
-import { ChatOpenAI } from '@langchain/openai'
-import { HumanMessage, AIMessage, SystemMessage, BaseMessage } from '@langchain/core/messages'
 import { searchProducts, formatProductContext } from './search'
-
-// ════════════════════════════════════════════════════
-// LLM SETUP — DeepSeek via OpenAI-compatible endpoint
-// ════════════════════════════════════════════════════
-
-function createLLM() {
-  const apiKey = process.env.DEEPSEEK_API_KEY
-  if (!apiKey) throw new Error('DEEPSEEK_API_KEY is not set')
-
-  return new ChatOpenAI({
-    modelName: 'deepseek-chat',
-    openAIApiKey: apiKey,
-    configuration: {
-      baseURL: 'https://api.deepseek.com/v1',
-    },
-    temperature: 0.7,
-    maxTokens: 1000,
-  })
-}
-
-// ════════════════════════════════════════════════════
-// AGENT STATE
-// ════════════════════════════════════════════════════
-
-interface AgentState {
-  messages: BaseMessage[]
-  retrieved_context: string
-  is_sales_inquiry: boolean
-  language: 'en' | 'de'
-  customer_name: string
-  customer_phone: string
-}
 
 // ════════════════════════════════════════════════════
 // LANGUAGE DETECTION
 // ════════════════════════════════════════════════════
 
 export function detect_language(text: string): 'en' | 'de' {
-  // Definitive: German umlauts
   if (/[äöüÄÖÜß]/.test(text)) return 'de'
-
-  const textLower = text.toLowerCase()
-
-  const germanKeywords = [
-    'habt', 'gibt', 'haben', 'größe', 'preis', 'bitte', 'danke',
-    'ist', 'sind', 'kaufen', 'bestellen', 'versand', 'lieferung',
-    'produkten', 'handschuhe', 'kickboxen', 'karate', 'boxen',
-  ]
-  const englishKeywords = [
-    'do you', 'have', 'what', 'size', 'price', 'please', 'thank',
-    'shipping', 'delivery', 'buy', 'order', 'gloves', 'boxing',
-    'kickboxing', 'karate',
-  ]
-
-  const deCount = germanKeywords.filter((kw) => textLower.includes(kw)).length
-  const enCount = englishKeywords.filter((kw) => textLower.includes(kw)).length
-
-  return deCount >= enCount ? 'de' : 'en'
+  const lower = text.toLowerCase()
+  const deHits = ['habt', 'gibt', 'haben', 'preis', 'bitte', 'danke', 'kaufen',
+    'handschuhe', 'kickboxen', 'boxen', 'karate', 'versand']
+    .filter(w => lower.includes(w)).length
+  const enHits = ['do you', 'have', 'what', 'size', 'price', 'please', 'thank',
+    'buy', 'order', 'gloves', 'boxing', 'shipping']
+    .filter(w => lower.includes(w)).length
+  return deHits >= enHits ? 'de' : 'en'
 }
 
 // ════════════════════════════════════════════════════
-// NODE 1: RETRIEVE
-// ════════════════════════════════════════════════════
-
-function retrieveNode(state: AgentState): Partial<AgentState> {
-  const lastMessage = state.messages[state.messages.length - 1].content as string
-  const products = searchProducts(lastMessage, 5)
-  const context = formatProductContext(products, state.language)
-  return { retrieved_context: context }
-}
-
-// ════════════════════════════════════════════════════
-// NODE 2: CLASSIFY
+// ESCALATION KEYWORDS
 // ════════════════════════════════════════════════════
 
 const ESCALATION_TRIGGERS: Record<'en' | 'de', string[]> = {
   en: [
-    'bulk order', 'bulk purchase', 'discount', 'wholesale',
-    'corporate', 'custom branding', 'custom logo', 'partnership',
-    'reseller', 'distributor', 'dropship', 'franchise',
-    'negotiate', 'payment terms', 'net terms', 'credit',
-    'sponsorship', 'agency', 'wholesale price', 'samples',
-    'large order', 'volume order',
+    'bulk order', 'bulk purchase', 'wholesale', 'corporate', 'custom branding',
+    'custom logo', 'partnership', 'reseller', 'distributor', 'dropship',
+    'franchise', 'negotiate', 'payment terms', 'net terms', 'credit',
+    'sponsorship', 'wholesale price', 'large order', 'volume order',
   ],
   de: [
-    'großbestellung', 'großkauf', 'rabatt', 'großhandel',
-    'corporate', 'custom branding', 'logo', 'partnerschaft',
-    'reseller', 'distributor', 'dropship', 'franchise',
-    'verhandeln', 'zahlungsziel', 'kreditlinie', 'sponsoring',
-    'agentur', 'großhandelspreis', 'muster', 'mustermenge',
-    'großkunde', 'mengenrabatt',
+    'grossbestellung', 'grosshandel', 'corporate', 'custom branding',
+    'partnerschaft', 'reseller', 'distributor', 'dropship', 'franchise',
+    'verhandeln', 'zahlungsziel', 'kreditlinie', 'sponsoring', 'agentur',
+    'grosshandelspreis', 'grosskunde', 'mengenrabatt',
   ],
 }
 
-function classifyNode(state: AgentState): Partial<AgentState> {
-  const lastMessage = (
-    state.messages[state.messages.length - 1].content as string
-  ).toLowerCase()
-
-  const triggers = ESCALATION_TRIGGERS[state.language] ?? ESCALATION_TRIGGERS.en
-  const isSalesInquiry = triggers.some((t) => lastMessage.includes(t))
-
-  return { is_sales_inquiry: isSalesInquiry }
+function isEscalation(message: string, language: 'en' | 'de'): boolean {
+  const lower = message.toLowerCase()
+  return ESCALATION_TRIGGERS[language].some(t => lower.includes(t))
 }
 
 // ════════════════════════════════════════════════════
-// NODE 3: ANSWER PRODUCT QUESTION
+// DEEPSEEK API — direct fetch, no LangChain
 // ════════════════════════════════════════════════════
 
-async function answerNode(
-  state: AgentState,
-  llm: ChatOpenAI
-): Promise<Partial<AgentState>> {
-  const lastMessage = state.messages[state.messages.length - 1].content as string
-  const context = state.retrieved_context
-  const lang = state.language
+async function callDeepSeek(systemPrompt: string, userMessage: string): Promise<string> {
+  const apiKey = process.env.DEEPSEEK_API_KEY
+  if (!apiKey) throw new Error('DEEPSEEK_API_KEY is not set')
 
-  let systemPrompt: string
+  const res = await fetch('https://api.deepseek.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: 'deepseek-chat',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userMessage },
+      ],
+      temperature: 0.7,
+      max_tokens: 500,
+    }),
+  })
 
-  if (lang === 'de') {
-    systemPrompt = `Du bist ein hilfreicher Kundenservice-Chatbot für 5elements-sports.com, einen deutschen Kampfsport-Shop.
-Du sprichst fließend Deutsch und bist freundlich und professionell.
-
-Verfügbare Produkte:
-${context}
-
-Antworte kurz und hilfreich auf Deutsch (max 150 Wörter).
-Wenn Produktlinks enthalten sind, zeige sie deutlich und separat.
-Wenn keine passenden Produkte gefunden wurden, entschuldige dich höflich.`
-  } else {
-    systemPrompt = `You are a helpful customer service chatbot for 5elements-sports.com, a German martial arts shop.
-You are friendly and professional.
-
-Available products:
-${context}
-
-Answer briefly and helpfully in English (max 150 words).
-If product URLs are included, display them clearly and on separate lines.
-If no matching products were found, apologise politely.`
+  if (!res.ok) {
+    const body = await res.text()
+    throw new Error(`DeepSeek API error ${res.status}: ${body}`)
   }
 
-  const response = await llm.invoke([
-    new SystemMessage(systemPrompt),
-    new HumanMessage(lastMessage),
-  ])
-
-  const newMessages = [
-    ...state.messages,
-    new AIMessage(response.content as string),
-  ]
-
-  return { messages: newMessages }
+  const data = await res.json()
+  return data.choices?.[0]?.message?.content ?? 'No response from AI.'
 }
 
 // ════════════════════════════════════════════════════
-// NODE 4: ESCALATE BUSINESS INQUIRY
-// ════════════════════════════════════════════════════
-
-function escalateNode(state: AgentState): Partial<AgentState> {
-  const lang = state.language
-
-  const msg =
-    lang === 'de'
-      ? `Vielen Dank für dein Interesse! 🙌
-
-Dies ist eine spezielle Anfrage, die unser Team persönlich bearbeitet.
-Unser Kundenservice-Team wird sich bald bei dir melden.
-
-Damit wir schneller antworten können, teile bitte:
-• Deinen Namen
-• Deine E-Mail-Adresse
-• Deine Telefonnummer`
-      : `Thank you for your interest! 🙌
-
-This is a special request that our team handles personally.
-Our support team will reach out to you shortly.
-
-To help us respond faster, please share:
-• Your name
-• Your email address
-• Your phone number`
-
-  const newMessages = [...state.messages, new AIMessage(msg)]
-  return { messages: newMessages, is_sales_inquiry: true }
-}
-
-// ════════════════════════════════════════════════════
-// AGENT PIPELINE
+// AGENT
 // ════════════════════════════════════════════════════
 
 export interface AgentResult {
@@ -216,38 +99,26 @@ export async function agent(input: {
 }): Promise<AgentResult> {
   const language = input.language ?? detect_language(input.message)
 
-  let state: AgentState = {
-    messages: [new HumanMessage(input.message)],
-    retrieved_context: '',
-    is_sales_inquiry: false,
-    language,
-    customer_name: input.customer_name ?? '',
-    customer_phone: input.customer_phone ?? '',
-  }
-
-  // Step 1: Retrieve products
-  Object.assign(state, retrieveNode(state))
+  // Step 1: Retrieve matching products
+  const products = searchProducts(input.message, 5)
+  const context = formatProductContext(products, language)
 
   // Step 2: Classify
-  Object.assign(state, classifyNode(state))
+  const escalated = isEscalation(input.message, language)
 
-  // Step 3: Answer or escalate
-  if (state.is_sales_inquiry) {
-    Object.assign(state, escalateNode(state))
-  } else {
-    const llm = createLLM()
-    Object.assign(state, await answerNode(state, llm))
+  // Step 3a: Business inquiry — canned response, no LLM needed
+  if (escalated) {
+    const msg = language === 'de'
+      ? 'Vielen Dank fuer dein Interesse!\n\nDies ist eine spezielle Anfrage, die unser Team persoenlich bearbeitet. Wir melden uns bald bei dir.\n\nTeile bitte deine Kontaktdaten:\n- Name\n- E-Mail\n- Telefonnummer'
+      : 'Thank you for your interest!\n\nThis is a special request our team handles personally. We will reach out to you shortly.\n\nPlease share your contact info:\n- Name\n- Email\n- Phone number'
+    return { response: msg, is_escalated: true, language }
   }
 
-  const lastMessage = state.messages[state.messages.length - 1]
-  const response =
-    typeof lastMessage.content === 'string'
-      ? lastMessage.content
-      : JSON.stringify(lastMessage.content)
+  // Step 3b: Answer product question via DeepSeek
+  const systemPrompt = language === 'de'
+    ? `Du bist ein freundlicher Kundenservice-Chatbot fuer 5elements-sports.com (Kampfsport-Shop).\nAntworte auf Deutsch, kurz und hilfreich (max 120 Woerter).\nZeige Produktlinks deutlich auf separaten Zeilen.\nWenn keine Produkte gefunden wurden, entschuldige dich hoeflich.\n\nVerfuegbare Produkte:\n${context}`
+    : `You are a friendly customer service chatbot for 5elements-sports.com (martial arts shop).\nAnswer in English, briefly and helpfully (max 120 words).\nShow product URLs clearly on separate lines.\nIf no products found, apologise politely.\n\nAvailable products:\n${context}`
 
-  return {
-    response,
-    is_escalated: state.is_sales_inquiry,
-    language,
-  }
+  const response = await callDeepSeek(systemPrompt, input.message)
+  return { response, is_escalated: false, language }
 }
