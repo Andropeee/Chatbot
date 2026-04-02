@@ -76,7 +76,9 @@ export default async function handler(
       language: result.language,
     })
   } catch (err) {
-    console.error('[api/chat] error:', err)
-    return res.status(500).json({ error: 'Internal server error' })
+    const message = err instanceof Error ? err.message : String(err)
+    console.error('[api/chat] error:', message)
+    // Return the real error message in non-production so it surfaces in Vercel logs
+    return res.status(500).json({ error: message })
   }
 }

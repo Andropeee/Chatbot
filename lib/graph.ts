@@ -10,7 +10,7 @@
  */
 
 import { ChatOpenAI } from '@langchain/openai'
-import { HumanMessage, AIMessage, BaseMessage } from '@langchain/core/messages'
+import { HumanMessage, AIMessage, SystemMessage, BaseMessage } from '@langchain/core/messages'
 import { searchProducts, formatProductContext } from './search'
 
 // ════════════════════════════════════════════════════
@@ -22,8 +22,8 @@ function createLLM() {
   if (!apiKey) throw new Error('DEEPSEEK_API_KEY is not set')
 
   return new ChatOpenAI({
-    model: 'deepseek-chat',
-    apiKey,
+    modelName: 'deepseek-chat',
+    openAIApiKey: apiKey,
     configuration: {
       baseURL: 'https://api.deepseek.com/v1',
     },
@@ -154,8 +154,8 @@ If no matching products were found, apologise politely.`
   }
 
   const response = await llm.invoke([
-    { role: 'system', content: systemPrompt },
-    { role: 'user', content: lastMessage },
+    new SystemMessage(systemPrompt),
+    new HumanMessage(lastMessage),
   ])
 
   const newMessages = [
