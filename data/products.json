@@ -1,154 +1,2004 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "RDX Boxing Gloves Blue 10oz",
-      "description": "Professional boxing gloves from RDX. Excellent wrist support, triple-layer foam padding. Perfect for training and sparring. Available in sizes 8oz, 10oz, 12oz, 14oz.",
-      "price": "44.99",
-      "categories": ["Boxing", "Gloves"],
-      "tags": ["boxing", "gloves", "rdx", "blue", "training"],
-      "sku": "RDX-BG-BLUE-10",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/rdx-boxing-gloves-blue-10oz",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5 Elements Coach Sticks",
+      "price": "55,00€",
+      "description": "5 Elements Coach Sticks – Schlag- & Reaktionstraining Leicht, präzise und sicher: Die Coach Sticks von 5 Elements sind perfekt für das Training von Reflexen, Verteidigung, Kopfbewegung und Kontertechniken. Ideal für Boxing, Kickboxen, MMA und Muay Thai. ✅ Schnelles Reaktionstraining ✅ Gepolstert & sicher für Trainer & Athlet ✅ Verbessert Technik, Distanzgefühl & Ausweichen",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "MTBS--001",
+      "url": "https://5elements-sports.com/product/5-elements-coach-sticks/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:43.663105"
     },
     {
-      "id": 2,
-      "name": "Everlast Pro Style Boxing Gloves 12oz",
-      "description": "Classic Everlast Pro Style boxing gloves. Durable synthetic leather, pre-curved thumb design. Great for bag work and sparring. Sizes: 10oz, 12oz, 14oz, 16oz.",
-      "price": "52.99",
-      "categories": ["Boxing", "Gloves"],
-      "tags": ["boxing", "gloves", "everlast", "training", "sparring"],
-      "sku": "EVR-PSG-12",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/everlast-pro-style-12oz",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5 Elements Rote Kraft Boxhandschuh",
+      "price": "75,00€",
+      "description": "5 Elements Rote Kraft Boxhandschuh: Ultimativer Schutz für Ihre Hände Extra Polsterung vorne zum Schutz der Hände Polsterung am Handgelenk zur Vermeidung von Überrotation Hergestellt aus echtem Leder und handgefertigt für höchste Qualität Ideal für Boxen, Kampfsport und intensives Training",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B002",
+      "url": "https://5elements-sports.com/product/5-elements-rote-kraft-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:44.690696"
     },
     {
-      "id": 3,
-      "name": "Fairtex BGV1 Muay Thai Boxing Gloves",
-      "description": "Premium Fairtex BGV1 Muay Thai boxing gloves. Genuine leather construction, contoured hook-and-loop closure. Used by professional fighters worldwide. Sizes: 10oz–16oz.",
-      "price": "119.95",
-      "categories": ["Boxing", "Muay Thai", "Gloves"],
-      "tags": ["boxing", "gloves", "fairtex", "muay thai", "premium", "leather"],
-      "sku": "FTX-BGV1",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/fairtex-bgv1-muay-thai-gloves",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Element Pro Boxbandage",
+      "price": "45,00€",
+      "description": "5Element Pro Boxbandage – Elastische Boxbandagen für zuverlässigen Halt und Schutz im Kampfsport. Mit Daumenschlaufe, Klettverschluss und stylischem Design. Ideal für Boxen, MMA, Muay Thai & Co. Waschbar, schweißabsorbierend und langlebig. Für Einsteiger und Profis!",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "BBP--001",
+      "url": "https://5elements-sports.com/product/5element-pro-boxbandage/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:45.725569"
     },
     {
-      "id": 4,
-      "name": "Venum Challenger MMA Gloves",
-      "description": "Venum Challenger MMA gloves for training and competition. Premium Skintex leather, attached thumb, full palm open design. Sizes: S/M and L/XL.",
-      "price": "34.90",
-      "categories": ["MMA", "Gloves"],
-      "tags": ["mma", "gloves", "venum", "challenger", "grappling"],
-      "sku": "VNM-CHAL-MMA",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/venum-challenger-mma-gloves",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elemente Kopfschutz",
+      "price": "",
+      "description": "Handgefertigter 5Elements Kopfschutz mit zusätzlichem Schutz für das Jochbein Geeignet für nahezu alle Kampfkünste, sowohl für Training als auch Wettkampf Erhältlich in den Größen von XS bis XL",
+      "categories": [],
+      "sku": "KS001B",
+      "url": "https://5elements-sports.com/product/5elemente-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:46.805883"
     },
     {
-      "id": 5,
-      "name": "RDX MMA Sparring Gloves Pro",
-      "description": "RDX MMA Pro Series sparring gloves. 7oz weight, durable Maya hide leather, gel padding. Open palm design for grappling. Sizes: S/M, L/XL.",
-      "price": "29.99",
-      "categories": ["MMA", "Gloves"],
-      "tags": ["mma", "gloves", "rdx", "sparring", "grappling"],
-      "sku": "RDX-MMA-PRO-7",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/rdx-mma-sparring-gloves-pro",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements Bauch- & Beinpolster",
+      "price": "190,00€",
+      "description": "5 Elements Trainer Schutzset – Bauch- & Beinpolster Maximaler Schutz für Trainer im Kampfsport. Das Set bietet gezielte Abwehr für Bauch und Oberschenkel – perfekt für harte Kicks, Knie und Kombinationen im Muay Thai, MMA und Kickboxen. ✅ Strapazierfähiges Kunstleder ✅ Starke Polsterung für Schläge und Tritte ✅ Sicherer Sitz, volle Bewegungsfreiheit",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "PRBB--001",
+      "url": "https://5elements-sports.com/product/5elements-bauch-beinpolster/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:47.870291"
     },
     {
-      "id": 6,
-      "name": "Adidas ADISTAR Kopfschutz Headguard",
-      "description": "Adidas ADISTAR competition headguard. Meets AIBA regulations. Lightweight design with wide vision cutout. Available in S/M and L/XL.",
-      "price": "89.95",
-      "categories": ["Boxing", "Schutzausrüstung", "Kopfschutz"],
-      "tags": ["kopfschutz", "headguard", "boxing", "adidas", "competition", "schutz"],
-      "sku": "ADI-KOPF-STAR",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/adidas-adistar-kopfschutz",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements Bauchschild",
+      "price": "75,00€",
+      "description": "5Elements Bauchschild, robuste Schutzvorrichtung für den Bauchbereich Handgefertigt aus hochwertigem Material für maximale Sicherheit und Haltbarkeit",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11450",
+      "url": "https://5elements-sports.com/product/5elements-bauchschild/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:48.893156"
     },
     {
-      "id": 7,
-      "name": "Venum Elite Kopfschutz Headguard",
-      "description": "Venum Elite boxing headguard. Triple-density foam, adjustable rear strap and chin strap. Full coverage protection. Sizes: S/M and L/XL.",
-      "price": "74.90",
-      "categories": ["Boxing", "Kickboxing", "Schutzausrüstung", "Kopfschutz"],
-      "tags": ["kopfschutz", "headguard", "boxing", "kickboxen", "venum", "schutz"],
-      "sku": "VNM-ELITE-HEAD",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/venum-elite-kopfschutz",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements BJJ/Jujutsu Anzug",
+      "price": "75,00€",
+      "description": "Material: 100% Baumwolle Design: Robuste Verarbeitung für maximale Haltbarkeit und Stärke Passform: Ergonomische Passform für optimale Bewegungsfreiheit Farben: Erhältlich in verschiedenen Farben Anwendung: Ideal für Brazilian Jiu-Jitsu Training und Wettkämpfe”",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO"
+      ],
+      "sku": "BJJA14",
+      "url": "https://5elements-sports.com/product/5elements-bjj-jujutsu-anzug/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:49.943818"
     },
     {
-      "id": 8,
-      "name": "RDX Heavy Boxing Bag 4ft",
-      "description": "RDX 4ft punching bag. Maya hide leather shell, triple-layer foam fill. Includes hanging chains and swivel. Weight approx. 30kg. Ideal for boxing, kickboxing, Muay Thai.",
-      "price": "79.99",
-      "categories": ["Boxing", "Equipment", "Sandsack"],
-      "tags": ["sandsack", "punching bag", "boxing", "rdx", "heavy bag"],
-      "sku": "RDX-BAG-4FT",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/rdx-heavy-boxing-bag-4ft",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements BJJ/Jujutsu Kinderanzug",
+      "price": "55,00€",
+      "description": "Material: 100% Baumwolle Größen: 2  in 1 Größen, mit verlängerbaren Ärmeln und Hosenbeinen Design: Robuste Verarbeitung für maximale Haltbarkeit Anwendung: Ideal für Kinder im BJJ und Jujutsu Training Farben: Erhältlich in verschiedenen Farben”",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO"
+      ],
+      "sku": "BJJAK01",
+      "url": "https://5elements-sports.com/product/5elements-bjj-jujutsu-kinderanzug/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:50.954263"
     },
     {
-      "id": 9,
-      "name": "Hayabusa T3 Kickboxing Shin Guards",
-      "description": "Hayabusa T3 shin guards for kickboxing and Muay Thai. Dual cross-strap closure, anatomical shaping. Full shin and instep coverage. Sizes: S, M, L, XL.",
-      "price": "69.95",
-      "categories": ["Kickboxing", "Muay Thai", "Schienbeinschützer"],
-      "tags": ["schienbeinschützer", "shin guards", "kickboxen", "muay thai", "hayabusa"],
-      "sku": "HAY-T3-SHIN",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/hayabusa-t3-shin-guards",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements BJJ/Luta Livre  Gürtel",
+      "price": "15,00€",
+      "description": "Material: Hochwertige Baumwolle Design: Robuste und langlebige Verarbeitung Farben: Erhltlich in verschiedenen Farben zur Unterscheidung der Rangstufen Größen: Verfügbar in verschiedenen Längen für alle Altersgruppen und Körpergrößen Anwendung: Ideal für Brazilian Jiu-Jitsu (BJJ) und Luta Livre",
+      "categories": [
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "ZUBEHÖR"
+      ],
+      "sku": "JJG01",
+      "url": "https://5elements-sports.com/product/5elements-bjj-luta-livre-guertel/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:52.049400"
     },
     {
-      "id": 10,
-      "name": "Venum Karate Gi White 8oz",
-      "description": "Venum Elite Karate Gi. 8oz cotton-polyester blend, elastic waistband pants, reinforced stitching. Available in sizes 140cm–200cm. WKF approved for competition.",
-      "price": "59.90",
-      "categories": ["Karate", "Gi", "Kampfanzug"],
-      "tags": ["karate", "gi", "anzug", "weiss", "venum", "wkf", "wettkampf"],
-      "sku": "VNM-KAR-GI-WH",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/venum-karate-gi-white",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements Blackout Boxhandschuh",
+      "price": "90,00€",
+      "description": "5Elements Blackout Boxhandschuh Material: Premium Leder Design: Komplett in Schwarz für einen eleganten und kraftvollen Look Größen: Erhältlich in allen Größen (10 oz, 12 oz, 14 oz, 16 oz, 18 oz) Verschluss: Robuster Klettverschluss für sicheren Halt Polsterung: Dicke Polsterung für maximalen Schutz Anwendung: Perfekt für Boxtraining, Sparring und Wettkämpfe",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B006",
+      "url": "https://5elements-sports.com/product/5elements-blackout-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:53.063444"
     },
     {
-      "id": 11,
-      "name": "RDX Zahnschutz Mundschutz Mouthguard",
-      "description": "RDX boil-and-bite mouthguard. Absorbs up to 60% of impact. Includes protective case. Fits most mouth sizes. Available in multiple colours.",
-      "price": "9.99",
-      "categories": ["Schutzausrüstung", "Zahnschutz"],
-      "tags": ["zahnschutz", "mundschutz", "mouthguard", "schutz", "rdx"],
-      "sku": "RDX-MOUTH-01",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/rdx-zahnschutz-mouthguard",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements Blitz Hand Pratzen",
+      "price": "55,00€",
+      "description": "5Elements Blitz Leder Handpratzen – Präzision & Power Die Blitz-Handpratzen von 5Elements sind dein perfekter Begleiter für schnelles, intensives Schlagtraining. Aus hochwertigem Leder gefertigt und ideal geformt für präzise Treffer und maximalen Schutz – für Trainer und Kämpfer. ✅ Hochwertiges Echtleder ✅ Ergonomische Passform ✅ Ideal für Boxen, Kickboxen, MMA & Muay Thai",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "PRB--001",
+      "url": "https://5elements-sports.com/product/5elements-blitz-hand-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:54.119774"
     },
     {
-      "id": 12,
-      "name": "Everlast Boxhandschuhe BlauRot 10oz",
-      "description": "Everlast Boxhandschuhe Klassik Serie. Blaues und rotes Design. Synthetisches Leder, C3 Foam Polsterung. Ideal für Sparring und Taschentraining. Größen: 10oz, 12oz.",
-      "price": "39.99",
-      "categories": ["Boxen", "Handschuhe"],
-      "tags": ["boxhandschuhe", "boxing", "gloves", "everlast", "blau", "rot"],
-      "sku": "EVR-BLU-RED-10",
-      "stock_status": "instock",
-      "url": "https://5elements-sports.com/everlast-boxhandschuhe-blaurot",
-      "scraped_at": "2026-04-01T10:00:00"
+      "name": "5Elements Box-Schuhe, kurz",
+      "price": "75,00€",
+      "description": "5Elements Box-Schuh, kurz Die kurzen 5Elements Box-Schuhe bieten optimalen Halt und Flexibilität für Boxer. Mit ihrem leichten, atmungsaktiven Material sorgen sie für ausgezeichneten Grip und Komfort, sodass schnelle Bewegungen und eine verbesserte Leistung im Ring möglich sind.",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "ZUBEHÖR"
+      ],
+      "sku": "BOXSCHK--001",
+      "url": "https://5elements-sports.com/product/5elements-box-schuhe-kurz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 399'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:55.174548"
+    },
+    {
+      "name": "5Elements Box-Schuhe, lang",
+      "price": "75,00€",
+      "description": "Die langen 5Elements Box-Schuhe bieten ausgezeichneten Halt und Unterstützung für Boxer, die Stabilität und Flexibilität im Ring suchen. Mit ihrem höheren Schaft bieten sie zusätzlichen Knöchelschutz und eine verbesserte Passform, während das atmungsaktive Material für Komfort sorgt.",
+      "categories": [
+        "BOXEN",
+        "ZUBEHÖR"
+      ],
+      "sku": "BOXSCHL",
+      "url": "https://5elements-sports.com/product/5elements-box-schuhe-lang/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 399'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:56.481583"
+    },
+    {
+      "name": "5Elements Christal-Kopfschutz",
+      "price": "65,00€",
+      "description": "Handgefertigter 5Elements Christal-Kopfschutz Vielseitig einsetzbar für Boxing, Kickboxing, MMA, Wing Chun und viele andere Kampfsportarten Einfache Größenanpassung mit Klettverschluss Erhältlich in den Größen von XS bis XL",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "11468",
+      "url": "https://5elements-sports.com/product/5elements-christal-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:01:57.497774"
+    },
+    {
+      "name": "5Elements Damen Brustschutz",
+      "price": "35,00€",
+      "description": "Hochwertiger Brustschutz für Kampfsportlerinnen mit robuster, anatomisch geformter Plastikschale für optimalen Schutz. Elastische Träger und verstellbarer Hakenverschluss sorgen für sicheren Sitz und hohen Tragekomfort. Ideal für Karate, Taekwondo und andere Kampfsportarten.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "TAEKWONDO",
+        "Zubehör"
+      ],
+      "sku": "BS001",
+      "url": "https://5elements-sports.com/product/5elements-damen-brustschutz/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:01:58.568146"
+    },
+    {
+      "name": "5Elements Doppel-Hand Pratzen",
+      "price": "32,00€",
+      "description": "5Elements Doppel-Hand Pratzen, entworfen, um die Kick-Technik zu verbessern Ideal für Taekwondo und andere Kampfsportarten, die Kicks einsetzen",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11446",
+      "url": "https://5elements-sports.com/product/5elements-doppel-hand-pratzen/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:01:59.584921"
+    },
+    {
+      "name": "5Elements “Dunkle Klinge” Rashguard",
+      "price": "39,99€",
+      "description": "Leistungsstarker Rashguard mit Samurai-Design – ideal für BJJ, MMA & No-Gi. Erhältlich ab Kindergrößen. Schweißableitend, robust und maximal beweglich.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "11493",
+      "url": "https://5elements-sports.com/product/5elements-dunkle-klinge-rashguard/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:00.599532"
+    },
+    {
+      "name": "5Elements Elite Boxhandschuhe",
+      "price": "90,00€",
+      "description": "Material: Echtes Leder Gewicht: Erhältlich in 10 oz, 14 oz und 16 oz Farbe: Schwarz/Rot, Schwarz/Gold, Schwarz/Grün, Schwarz/Braun, Babyblau Besonderheiten: Komfortable Passform, weiche Füllung, stabile Verarbeitung, Klettverschluss",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B001",
+      "url": "https://5elements-sports.com/product/5elements-elite-boxhandschuhe/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 434'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:01.905672"
+    },
+    {
+      "name": "5Elements Elite Muaythai Pratzen",
+      "price": "220,00€",
+      "description": "5Elements Elite Muaythai Pratzen, handgefertigt aus hochwertigem Echtleder für lang anhaltende Qualität Robustes Design mit leichter Schwere zur Aufnahme starker Schläge Verstellbar mit zwei Klettverschlussriemen am Unterarm, etwas kleiner für maximale Stoﬂdämpfung",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11455",
+      "url": "https://5elements-sports.com/product/5elements-elite-muaythai-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:04.262088"
+    },
+    {
+      "name": "5ELements Elite Schienbeinschoner",
+      "price": "90,00€",
+      "description": "Material: Hochwertiges Kunstleder Design: Schlankes, ergonomisches Design für optimale Bewegungsfreiheit Polsterung: Dichte Schaumstoffpolsterung für maximalen Schutz Verschluss: Elastische Bänder und Klettverschlüsse für sicheren Halt Anwendung: Ideal für Kampfsportarten wie Muay Thai, Kickboxen und MMA",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Schienbeinschutz"
+      ],
+      "sku": "SSL",
+      "url": "https://5elements-sports.com/product/5elements-elite-schienbeinschoner/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0  '%2F%3E",
+      "scraped_at": "2026-04-02T19:02:05.292707"
+    },
+    {
+      "name": "5Elements Fitness Boxhandschuh",
+      "price": "16,07€–45,00€",
+      "description": "Die 5ELements Boxhandschuhe bieten Einsteigern in Kampfsportarten nicht nur Schutz und Komfort, sondern sind auch äußerst erschwinglich. Mit ihrer perfekten Passform sind sie ideal für Anfänger, die gerade erst beginnen.",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "5009",
+      "url": "https://5elements-sports.com/product/5elements-fitness-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:06.385342"
+    },
+    {
+      "name": "5Elements Funktional T-Shirt",
+      "price": "39,99€",
+      "description": "Unisex Trainingsshirt von 5Element. Leicht, atmungsaktiv und ideal für Kampfsport und Fitness. Mit kleinen Belüftungslöchern für optimale Luftzirkulation.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "MMA Kompression",
+        "TAEKWONDO"
+      ],
+      "sku": "FTSHIRT-002",
+      "url": "https://5elements-sports.com/product/5elements-funktional-t-shirt/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:07.432369"
+    },
+    {
+      "name": "5Elements Fusion Elite Boxhandschuh",
+      "price": "90,00€",
+      "description": "Material: Echtes Leder Farben: Erhältlich in Weiß, Orange und Babyblau Gewicht: Erhältlich in 10 oz, 14 oz und 16 oz Besonderheiten: Komfortable Passform, weiche Füllung, stabile Verarbeitung, Klettverschluss",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B004",
+      "url": "https://5elements-sports.com/product/5elements-fusion-elite-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:08.473200"
+    },
+    {
+      "name": "5Elements Fussbandagen",
+      "price": "15,00€",
+      "description": "5ELements Fuﬂbandagen: Optimaler Schutz und Unterstützung Hochwertiges, elastisches Material für perfekte Passform Leicht anzulegen und bequem zu tragen Ideal für Boxen, MMA und andere Kampfsportarten",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "FB",
+      "url": "https://5elements-sports.com/product/5elements-fussbandagen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:09.980982"
+    },
+    {
+      "name": "5Elements Gebogenes Schlagpolster, klein",
+      "price": "75,01€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11484",
+      "url": "https://5elements-sports.com/product/5elements-gebogenes-schlagpolster-klein/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:10.995352"
+    },
+    {
+      "name": "5Elements Ghost Boxhandschuh",
+      "price": "45,00€–55,00€",
+      "description": "5Elements Ghost Boxhandschuhe: Minimalistisches Design, maximale Leistung Hochwertiges Material für Langlebigkeit und Zuverlässigkeit Schlank und leicht für schnelle Bewegungen und präzise Schläge Ideal für Profis und aufstrebende Amateure, die Stil und Leistung suchen",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B008",
+      "url": "https://5elements-sports.com/product/5elements-ghost-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:15.603822"
+    },
+    {
+      "name": "5ELements Ghost MMA-Handschuh",
+      "price": "35,00€",
+      "description": "Hochwertiges Kunstleder: Strapazierfähig und pflegeleicht für eine lange Lebensdauer. Optimaler Schutz: Gepolsterte Knöchel und Handflächen bieten hervorragende Stoßdämpfung und Schutz. Ergonomische Passform: Verstellbare Klettverschlüsse für eine individuelle und sichere Anpassung. Atmungsaktive Konstruktion: Belüftete Netzpaneele für eine bessere Luftzirkulation und reduzierte Schweißbildung. Vielseitig einsetzbar: Ideal für MMA-Training, Sparring und Wettkämpfe mit einem modernen, schlanken Design.",
+      "categories": [
+        "HANDSCHUHE",
+        "KUNGFU",
+        "MMA",
+        "MMA Handschuhe"
+      ],
+      "sku": "MMAHPU001",
+      "url": "https://5elements-sports.com/product/5elements-ghost-mma-handschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:16.621885"
+    },
+    {
+      "name": "5Elements Ghost Schienbeinschoner",
+      "price": "50,00€–65,00€",
+      "description": "Material: Hochwertiges  Kunstleder Design: Schlankes, ergonomisches Design für optimale Bewegungsfreiheit Polsterung: Dichte Schaumstoffpolsterung für maximalen Schutz Verschluss: Elastische Bänder und Klettverschlüsse für sicheren Halt Anwendung: Ideal für Kampfsportarten wie Muay Thai, Kickboxen und MMA",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Schienbeinschutz"
+      ],
+      "sku": "SSPU01",
+      "url": "https://5elements-sports.com/product/5elements-ghost-schienbeinschoner/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:17.658720"
+    },
+    {
+      "name": "5Elements Hand Pratzen 2.0",
+      "price": "75,01€",
+      "description": "5Elements Hand Pratzen 2.0, leichtgewichtig und perfekt passend für optimale Leistung Handgefertigt aus hochwertigem Echtleder für Langlebigkeit und Komfort Ideal für schnelle Bewegungen und präzise Techniken beim Training Geeignet für Boxen, Kickboxen, MMA und andere Kampfkünste",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11453",
+      "url": "https://5elements-sports.com/product/5elements-hand-pratzen-2-0/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:18.671799"
+    },
+    {
+      "name": "5Elements Hand Pratzen Pro",
+      "price": "90,00€",
+      "description": "5Elements Hand Pratzen Pro, leichtgewichtig und perfekt passend für optimale Leistung Handgefertigt aus hochwertigem Echtleder für Langlebigkeit und Komfort Mit einer Gelschicht für zus‰äzliche Stoßdämpfung bei harten Treffern Inklusive zusätzlicher Handgelenkstütze für verbesserte Stabilität",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11452",
+      "url": "https://5elements-sports.com/product/5elements-hand-pratzen-pro/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:19.691459"
+    },
+    {
+      "name": "5Elements Handbandagen",
+      "price": "10,00€–12,00€",
+      "description": "Betrete die Arena vollständig vorbereitet mit den 5Elements Handbandagen. Erhältlich in drei Größen und einer Vielzahl von Farben bieten diese Handbandagen erstklassige Unterstützung und Komfort, geeignet für eine Vielzahl von Kampfsportarten.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "HB",
+      "url": "https://5elements-sports.com/product/5elements-handbandagen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 400'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:24.234235"
+    },
+    {
+      "name": "5Elements Heavy Hitter Boxhandschuh",
+      "price": "110,00€",
+      "description": "5Elements Heavy Hitter Boxhandschuh Echtleder: Für extreme Haltbarkeit und einen professionellen Look. Schutz für das Handgelenk: Bietet zusätzlichen Halt und minimiert das Verletzungsrisiko. Ergonomisches Design: Sorgt für eine bequeme und stabile Passform. Atmungsaktive Polsterung: Hält die Hände kühl und trocken. Perfekt für intensives Training: Ideal für Sparring und Wettkämpfe. Erleben Sie mit den 5Elements Heavy Hitter Boxhandschuhen erstklassigen Schutz, Komfort und Leistung in einem.",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "11479",
+      "url": "https://5elements-sports.com/product/5elements-heavy-hitter-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:25.280064"
+    },
+    {
+      "name": "5Elements Innenhandschuhe",
+      "price": "12,00€",
+      "description": "Die 5ELements Innenhandschuhe sind sehr hochwertig, da sie zusätzlichen Schutz und Komfort während des Trainings bieten. Sie bestehen aus atmungsaktiven Materialien und verfügen über integrierte Gel-Pads zur Stoßdämpfung sowie einen sicheren Klettverschluss für einen passgenauen Sitz. Ideal zum Schutz der Hände und Handgelenke, verbessern diese Handschuhe den Komfort und die Sicherheit beim Training. Erhältlich in verschiedenen Größen sind die 5ELements Innenhandschuhe eine ausgezeichnete Wahl für alle Boxer.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "11481",
+      "url": "https://5elements-sports.com/product/5elements-innenhandschuhe/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:26.330772"
+    },
+    {
+      "name": "5Elements Judo-Anzug",
+      "price": "75,00€",
+      "description": "Der 5Elements Judo Anzug kombiniert Funktionalität und Komfort für Ihr Training. Aus robustem, strapazierfähigem Material gefertigt, bietet er optimale Bewegungsfreiheit und Halt bei jeder Technik. Ideal für Anfänger und erfahrene Judoka",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "JUDO"
+      ],
+      "sku": "JUDOA--001",
+      "url": "https://5elements-sports.com/product/5elements-judo-anzug/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:27.388358"
+    },
+    {
+      "name": "5Elements Karate-Handschuh",
+      "price": "32,00€",
+      "description": "Hochwertiges Material: Aus strapazierfähigem Kunstleder gefertigt für zusätzlichen Schutz und Langlebigkeit. Optimale Polsterung: Gepolsterte Knöchel und verstärkter Handgelenkschutz absorbieren Stöße und verhindern Verletzungen. Komfortabler Sitz: Ergonomisches Design mit verstellbaren Klettverschlüssen für eine sichere und individuelle Passform. Atmungsaktives Design: Belüftete Netzpaneele sorgen für maximale Luftzirkulation und reduzieren das Schwitzen. Vielseitig einsetzbar: Ideal für Karate-Training, Sparring und Wettkämpfe mit einem eleganten, professionellen Aussehen.",
+      "categories": [
+        "HANDSCHUHE",
+        "KARATE",
+        "Taekwondo und Karate Handschuhe"
+      ],
+      "sku": "KH001",
+      "url": "https://5elements-sports.com/product/5elements-karate-handschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:28.457202"
+    },
+    {
+      "name": "5Elements Karate/Taekwondo-Gürtel, einfarbig",
+      "price": "8,00€",
+      "description": "Material: Hochwertige Baumwolle Design: Einfarbig für einen einzigartigen und stilvollen Look Längen: Erhältlich in verschiedenen Längen für alle Altersgruppen und Körpertypen Anwendung: Geeignet für Karate, Taekwondo und viele andere Kampfsportarten",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "TAEKWONDO",
+        "ZUBEHÖR"
+      ],
+      "sku": "11440",
+      "url": "https://5elements-sports.com/product/5elements-karate-taekwondo-guertel-einfarbig/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 400'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:29.524644"
+    },
+    {
+      "name": "5Elements Karate/Taekwondo-Gürtel, zweifarbig",
+      "price": "10,00€",
+      "description": "Material: Hochwertige Baumwolle Design: Zweifarbig für einen einzigartigen und stilvollen Look Längen: Erhältlich in verschiedenen Längen für alle Altersgruppen und Körpertypen Anwendung: Geeignet für Karate, Taekwondo und viele andere Kampfsportarten",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "TAEKWONDO",
+        "ZUBEHÖR"
+      ],
+      "sku": "ZFG",
+      "url": "https://5elements-sports.com/product/5elements-karate-taekwondo-guertel-zweifarbig/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 400'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:30.606150"
+    },
+    {
+      "name": "5Elements Karate-Weste",
+      "price": "35,00€",
+      "description": "5Elements Karate-Weste Die 5Elements Karate-Weste steht für ultimativen Komfort und Bewegungsfreiheit beim Training und bei Wettkämpfen. Hergestellt aus hochwertigem, atmungsaktivem Material, bietet sie eine leichte und dennoch langlebige Option für Karatekämpfer, die eine zuverlässige und stilvolle Trainingsweste suchen.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KARATE",
+        "Zubehör"
+      ],
+      "sku": "KAW--001",
+      "url": "https://5elements-sports.com/product/5elements-karate-weste/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:31.616440"
+    },
+    {
+      "name": "5Elements Karateanzug",
+      "price": "36,00€",
+      "description": "5ELements Karateanzug: Hochwertige Qualität und Komfort 65% Polyester und 35% Baumwolle für Langlebigkeit und Atmungsaktivität Robustes Material für Bewegungsfreiheit Erhältlich in verschiedenen Größen für eine perfekte Passform Ideal für Anfänger und erfahrene Karateka",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "KARATE"
+      ],
+      "sku": "KA",
+      "url": "https://5elements-sports.com/product/5elements-karateanzug/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:32.664109"
+    },
+    {
+      "name": "5ELements Kickbox-Anzug",
+      "price": "55,00€–65,00€",
+      "description": "Hochwertiger Satin-Stoff: Langlebig und atmungsaktiv für optimalen Komfort und Leistung. Ergonomisches Design: Ermöglicht maximale Bewegungsfreiheit und Flexibilität. Feuchtigkeitsableitend: Hält Sie trocken und kühl während intensiver Trainingseinheiten. Verstärkte Nähte: Robuste Nähte an kritischen Stellen für lange Haltbarkeit. Vielseitige Größen und Farben: Erhältlich in verschiedenen Größen und Farben für individuelle Anpassung. Stilvoll und Professionell: Professioneller Look, der Selbstbewusstsein bei jedem Einsatz vermittelt.",
+      "categories": [
+        "BEKLEIDUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "Pointfight/Semi Contact"
+      ],
+      "sku": "KBA001",
+      "url": "https://5elements-sports.com/product/5elements-kickbox-anzug/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:33.694217"
+    },
+    {
+      "name": "5Elements Kickboxing Kopfschutz",
+      "price": "",
+      "description": "Handgefertigter 5Elements Kickboxing Kopfschutz, speziell für Kickboxing und andere Kampfkünste Verstellbarer Klettverschluss am unteren Rand und im Rückenbereich für die perfekte Passform Erhältlich in den Größen von XS bis XL",
+      "categories": [],
+      "sku": "KS001KB",
+      "url": "https://5elements-sports.com/product/5elements-kickboxing-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:34.714183"
+    },
+    {
+      "name": "5ELements Kickboxing-Tasche",
+      "price": "40,00€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO",
+        "ZUBEHÖR",
+        "Zubehör"
+      ],
+      "sku": "TKB001",
+      "url": "https://5elements-sports.com/product/5elements-kickboxing-tasche/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:35.733069"
+    },
+    {
+      "name": "5ELements Kinder-Boxhandschuh",
+      "price": "25,00€–35,00€",
+      "description": "Der 5ELements Kinder-Boxhandschuh ist ein hochwertiger Boxhandschuh, der für junge Athleten entwickelt wurde. Hergestellt aus strapazierfähigem Kunstleder und mit ausreichend Polsterung ausgestattet, bieten diese Handschuhe Komfort und Schutz für die Hände und Handgelenke von Kindern. Der einfach zu bedienende Klettverschluss sorgt für einen sicheren Sitz, während das ergonomische Design ein sicheres Training fördert. Erhältlich in mehreren Größen ist der 5ELements Kinder Boxhandschuh die perfekte Wahl für junge Boxer.",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "KBHS--001",
+      "url": "https://5elements-sports.com/product/5elements-kinder-boxhandschuh/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:36.802648"
+    },
+    {
+      "name": "5Elements Kinder-Schienbeinschoner",
+      "price": "40,00€",
+      "description": "Perfekter Schutz: Schützt die Schienbeine vor Stößen und Verletzungen. Leicht und flexibel: Bietet Schutz ohne die Bewegungsfreiheit zu beeinträchtigen. Stabile Passform: Elastische Riemen sorgen für sicheren Halt. Atmungsaktive Polsterung: Hält die Beine kühl und trocken während des Trainings. Ideal für Kinder: Perfekt für Taekwondo, Kickboxen und andere Kampfsportarten. Schützen Sie Ihr Kind mit den 5Elements Schienbeinschonern, damit es sich voll und ganz auf seine Technik und Leistung konzentrieren kann.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Schienbeinschutz"
+      ],
+      "sku": "SBSK--001",
+      "url": "https://5elements-sports.com/product/5elements-kinder-schienbeinschoner/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:37.820939"
+    },
+    {
+      "name": "5Elements Körperschutz",
+      "price": "170,00€",
+      "description": "5Elements Körperschutz, hochwertige Schutzvorrichtung für den gesamten Oberkörper Bietet umfassenden Schutz während des Trainings in verschiedenen Kampfsportarten",
+      "categories": [
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11449",
+      "url": "https://5elements-sports.com/product/5elements-koerperschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:38.866655"
+    },
+    {
+      "name": "5Elements Kopfschutz Kickboxing",
+      "price": "65,00€",
+      "description": "Handgefertigter 5Elements Kickboxing-Kopfschutz, speziell für Kickboxing und andere Kampfsportarten. Verstellbarer Klettverschluss am unteren Rand und im Rückenbereich für die perfekte Passform Erhältlich in den Größen von XS bis XL",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "11466",
+      "url": "https://5elements-sports.com/product/5elements-kopfschutz-kickboxing/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:39.885320"
+    },
+    {
+      "name": "5Elements Lang-Hand Pratzen",
+      "price": "95,00€",
+      "description": "5Elements Lang-Hand Pratzen, neue revolutionäre Handpratzen für vielseitiges Training von Tritten und Schlägen Länger als herkömmliche Handpratzen, ideal für Kick- und Schlagtechniken Leichtgewichtiges Design für müheloses Arbeiten während langer, intensiver Trainingseinheiten",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11451",
+      "url": "https://5elements-sports.com/product/5elements-lang-hand-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 899'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:40.906649"
+    },
+    {
+      "name": "5Elements Leder-Kopfschutz",
+      "price": "90,00€",
+      "description": "Handgefertigter 5Elements Kopfschutz aus hochwertigem Echtleder Vielseitig einsetzbar für Boxen, Kickboxen, MMA, Wing Chun und viele andere Kampfsportarten Offenes Kinn für Atmungsaktivität und Agilität Erhältlich in den Größen von XS bis XL Verstellbar mit Schnürsenkeln auf der Rückseite",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "KSLJ--001",
+      "url": "https://5elements-sports.com/product/5elements-leder-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:41.932650"
+    },
+    {
+      "name": "5ELements  Metall-Tiefschutz",
+      "price": "45,00€",
+      "description": "Metall-Tiefschutz: Ultimativer Schutz, Perfekte Passform Mit Klettverschluss oder Schnürung für individuelle Anpassung Entwickelt für maximalen Komfort und Sicherheit Ideal für Kampfsport, Sport und intensive Aktivitäten Robuste Konstruktion für langanhaltende Leistung",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "TAEKWONDO",
+        "Tiefschutz"
+      ],
+      "sku": "MTS003",
+      "url": "https://5elements-sports.com/product/5elements-metall-tiefschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 412'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:42.973204"
+    },
+    {
+      "name": "5Elements Mini-Schienbeinschoner",
+      "price": "70,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Schienbeinschutz"
+      ],
+      "sku": "SBSM",
+      "url": "https://5elements-sports.com/product/5elements-mini-schienbeinschoner/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 399'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:44.157257"
+    },
+    {
+      "name": "5Elements MMA-Shorts",
+      "price": "44,99€",
+      "description": "Unisex MMA-Shorts von 5Elements- Leicht, robust und ideal für Kampfsport sowie Training. Mit Anti-Rutsch-Gummibund für optimalen Halt beim Grappling.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "Hosen",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression",
+        "TAEKWONDO"
+      ],
+      "sku": "MMAHOSE--001",
+      "url": "https://5elements-sports.com/product/5elements-mma-shorts-2/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:45.220193"
+    },
+    {
+      "name": "5Elements MMA Shorts Pro",
+      "price": "46,22€",
+      "description": "Die 5Elements MMA Hose ist ein unverzichtbares Kleidungsstück für jeden Mixed Martial Arts (MMA) Athleten. Entwickelt, um Bewegungsfreiheit und Komfort während des Trainings und im Wettkampf zu gewährleisten. Hergestellt aus hochwertigen Materialien für Strapazierfähigkeit und Atmungsaktivität. Das spezielle Design bietet maximale Flexibilität für eine Vielzahl von Kampftechniken. Ideal für MMA Trainingseinheiten im Gym sowie für den Einsatz im MMA Ring. Die 5Elements MMA Hose kombiniert Funktionalität mit einem modernen Design und bietet Athleten Komfort und Stil.",
+      "categories": [
+        "BEKLEIDUNG",
+        "GRAPPLING",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "MMAH002",
+      "url": "https://5elements-sports.com/product/5elements-mma-shorts-pro/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:46.271827"
+    },
+    {
+      "name": "5Elements MMA Shorts",
+      "price": "46,22€",
+      "description": "Die 5Elements MMA Hose ist ein unverzichtbares Kleidungsstück für jeden Mixed Martial Arts (MMA) Athleten. Entwickelt, um Bewegungsfreiheit und Komfort während des Trainings und im Wettkampf zu gewährleisten. Hergestellt aus hochwertigen Materialien für Strapazierfähigkeit und Atmungsaktivität. Das spezielle Design bietet maximale Flexibilität für eine Vielzahl von Kampftechniken. Ideal für MMA Trainingseinheiten im Gym sowie für den Einsatz im MMA Ring. Die 5Elements MMA Hose kombiniert Funktionalität mit einem modernen Design und bietet Athleten Komfort und Stil.",
+      "categories": [
+        "BEKLEIDUNG",
+        "GRAPPLING",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "MMAH001",
+      "url": "https://5elements-sports.com/product/5elements-mma-shorts/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:02:47.412991"
+    },
+    {
+      "name": "5ELements MMA Sparring-Handschuh",
+      "price": "65,00€",
+      "description": "Hochwertiges Material: Echtleder für Erwachsene sorgt für hohe Haltbarkeit und Leistung; Kunstleder für Kinder bietet eine kostengünstige Option. Perfekte Passform: Erhältlich in verschiedenen Erwachsenengrößen für maßgeschneiderte Anpassung; spezielle Kindergrößen für den idealen Sitz. Optimaler Schutz: Gepolsterte Knöchel und Handflächen bieten effektive Stoßdämpfung und Schutz. Komfortable Anpassung: Verstellbare Klettverschlüsse gewährleisten eine sichere und individuelle Passform. Atmungsaktives Design: Netzpaneele sorgen für gute Belüftung und halten die Hände trocken.",
+      "categories": [
+        "HANDSCHUHE",
+        "KUNGFU",
+        "MMA",
+        "MMA Handschuhe"
+      ],
+      "sku": "MMASH001",
+      "url": "https://5elements-sports.com/product/5elements-mma-sparring-handschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:48.542807"
+    },
+    {
+      "name": "5ELements Muaythai-Hose",
+      "price": "30,00€–35,00€",
+      "description": "Die 5Elements Muay Thai-Hosen sind ein unverzichtbares Kleidungsstück für jeden ernsthaften Muay Thai-Praktizierenden. Sorgfältig entwickelt, um maximalen Komfort und uneingeschränkte Bewegungsfreiheit zu gewährleisten. Hergestellt aus hochwertigen Materialien, die Strapazierfähigkeit und Atmungsaktivität bieten. Angenehmes Tragegefühl, das Ihnen hilft, sich auf Ihre Techniken zu konzentrieren. Ideal für Training im Gym oder intensive Wettkämpfe im Ring. Durchdachtes Design und erstklassige Qualität bieten Komfort, Funktionalität und Stil.",
+      "categories": [
+        "BEKLEIDUNG",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Muaythai"
+      ],
+      "sku": "MTH001",
+      "url": "https://5elements-sports.com/product/5elements-muaythai-hose/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0  '%2F%3E",
+      "scraped_at": "2026-04-02T19:02:49.650318"
+    },
+    {
+      "name": "5Elements Muaythai Pratzen 2.0",
+      "price": "160,00€",
+      "description": "5Elements Muaythai Pratzen 2.0, handgefertigt aus hochwertigem Echtleder für Langlebigkeit Robustes Design, etwas schwerer für maximale Stoﬂdämpfung Verstellbar mit zwei Klettverschlussriemen am Unterarm",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11457",
+      "url": "https://5elements-sports.com/product/5elements-muaythai-pratzen-2-0/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:50.678251"
+    },
+    {
+      "name": "5Elements Muaythai Pratzen",
+      "price": "105,00€",
+      "description": "5Elements Muaythai Pratzen 2.0, handgefertigt aus hochwertigem Echtleder für Langlebigkeit Robustes Design, etwas schwerer für maximale Stoßdämpfung Verstellbar mit zwei Klettverschlussriemen am Unterarm",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "PR001-MT",
+      "url": "https://5elements-sports.com/product/5elements-muaythai-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 832'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:51.894949"
+    },
+    {
+      "name": "5Elements Mundschutz mit Gel",
+      "price": "12,00€",
+      "description": "5Elements Mundschutz mit Gel, perfekt für verschiedene Kampfkünste und andere Sportarten Gel im Inneren für perfekte Anpassung nach Eintauchen in heißes Wasser für 30 sekunden Erhältlich in den Größen Erwachsene und Junior",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Mundschutz",
+        "TAEKWONDO"
+      ],
+      "sku": "MS001-G",
+      "url": "https://5elements-sports.com/product/5elements-mundschutz-mit-gel/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 400'%2F%3E",
+      "scraped_at": "2026-04-02T19:02:59.387805"
+    },
+    {
+      "name": "5Elements Mundschutz ohne Anpassung",
+      "price": "15,00€",
+      "description": "5Elements Mundschutz  ohne Anpassung, passt direkt aus der Verpackung Neuartiges Produkt auf dem Markt, perfekt für eine Vielzahl von Sportarten, die einen Mundschutz erfordern Geeignet für MMA, Kickboxen, Boxen und viele andere Kampfkünste",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Mundschutz",
+        "TAEKWONDO"
+      ],
+      "sku": "MS001-KA",
+      "url": "https://5elements-sports.com/product/5elements-mundschutz-ohne-anpassung/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:03.250399"
+    },
+    {
+      "name": "5Elements Mundschutz, transparent",
+      "price": "10,00€",
+      "description": "5Elements Mundschutz ohne Anpassung erforderlich, passt direkt aus der Verpackung Neuartiges Produkt auf dem Markt, perfekt für eine Vielzahl von Sportarten, die einen Mundschutz erfordern Geeignet für MMA, Kickboxen, Boxen und viele andere Kampfkünste",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Mundschutz",
+        "TAEKWONDO"
+      ],
+      "sku": "MS001-T",
+      "url": "https://5elements-sports.com/product/5elements-mundschutz-transparent/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 400'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:06.961178"
+    },
+    {
+      "name": "5Elements Oberschenkel-Pratzen",
+      "price": "249,00€",
+      "description": "5Elements Oberschenkel-Pratzen – Low Kick Schutz für Trainer Die Oberschenkel-Pratzen von 5Elements ermöglichen realistische Low Kick Drills mit maximalem Schutz. Perfekt für Muay Thai, Kickboxen & MMA. Einfach anlegbar, robust verarbeitet und ideal für hartes Training. ✅ Starke Polsterung gegen Low Kicks ✅ Sicherer Sitz dank Klettsystem ✅ Hochwertiges Kunstleder – langlebig & stabil",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "PROB--001",
+      "url": "https://5elements-sports.com/product/5elements-oberschenkel-pratzen/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:10.523099"
+    },
+    {
+      "name": "5ELements Openhand Point Fighting Handschuhe",
+      "price": "40,00€",
+      "description": "Hochwertiges Kunstleder: Strapazierfähig und schützt Ihre Hände bei jedem Schlag. Offenes Design: Erlaubt exzellente Fingerfertigkeit und präzise Treffer. Ergonomische Passform: Passt sich der natürlichen Handform an und bietet hohen Komfort. Verstellbare Klettverschlüsse: Sicherer Sitz und kein Verrutschen während des Trainings. Atmungsaktives Innenfutter: Reduziert Feuchtigkeit und hält die Hände trocken. Verschiedene Größen und Farben: Für eine maßgeschneiderte Passform und individuellen Stil.",
+      "categories": [
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "Pointfight handschuhe"
+      ],
+      "sku": "OHH001",
+      "url": "https://5elements-sports.com/product/5elements-openhand-point-fighting-handschuhe/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:14.186190"
+    },
+    {
+      "name": "5Elements Point Fighting Fußschützer",
+      "price": "35,00€",
+      "description": "Strapazierfähiges Kunstleder: Schützt Ihre Füße und Knöchel bei intensiven Tritten. Ergonomisches Design: Passt sich der natürlichen Fußform an und ermöglicht optimale Bewegungsfreiheit. Flexible Polsterung: Bietet hervorragende Stoßdämpfung für präzise Tritte. Verstellbarer Klettverschluss: Sicherer Sitz und verhindert Verrutschen während des Trainings. Atmungsaktives Innenfutter: Reduziert Feuchtigkeit und hält Ihre Füße trocken. Verschiedene Größen und Farben: Für eine individuelle Passform und persönlichen Stil.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "Schienbeinschutz",
+        "Zubehör"
+      ],
+      "sku": "KBFS001",
+      "url": "https://5elements-sports.com/product/5elements-point-fighting-fussschuetzer/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:17.838656"
+    },
+    {
+      "name": "5Elements Premuim Puzzel-Matten 2 cm",
+      "price": "40,00€",
+      "description": "5Elements Premium Puzzlematten (2 cm): Robuste, etwas härtere EVA-Matten mit hoher Langlebigkeit. Ideal für intensives Training, Kampfsportarten und Heimstudios. Rutschfest, strapazierfähig und leicht zu reinigen.",
+      "categories": [
+        "Boden/Matten",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS"
+      ],
+      "sku": "MT2CMP",
+      "url": "https://5elements-sports.com/product/5elements-premuim-puzzel-matten-2-cm/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:21.415772"
+    },
+    {
+      "name": "5ELements Prime MMA-Handschuh",
+      "price": "55,00€",
+      "description": "Hochwertiges Echtleder: Robustes und langlebiges Material für herausragende Leistung und lange Lebensdauer. Exzellenter Schutz: Gepolsterte Knöchel und Handflächen bieten effektive Stoßdämpfung und Schutz. Ergonomische Passform: Verstellbare Klettverschlüsse mit extra langem Riemen für zusätzlichen Handgelenkschutz und individuelle Anpassung. Atmungsaktives Design: Belüftete Netzpaneele sorgen für optimale Luftzirkulation und reduzieren das Schwitzen. Vielseitig einsetzbar: Ideal für MMA-Training, Sparring und Wettkämpfe, mit einem eleganten und professionellen Aussehen.",
+      "categories": [
+        "HANDSCHUHE",
+        "KUNGFU",
+        "MMA",
+        "MMA Handschuhe"
+      ],
+      "sku": "MMAHL001",
+      "url": "https://5elements-sports.com/product/5elements-prime-mma-handschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:24.987053"
+    },
+    {
+      "name": "5Elements Pro Box-Tiefschutz",
+      "price": "79,00€",
+      "description": "5ELements Pro Box-Tiefschutz: Maximale Sicherheit und Komfort Hergestellt aus echtem Leder für langlebigen Schutz Ergonomisches Design für perfekte Passform Verstellbarer Gurt für individuelle Anpassung”",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "Tiefschutz"
+      ],
+      "sku": "MTS004",
+      "url": "https://5elements-sports.com/product/5elements-pro-box-tiefschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:28.981430"
+    },
+    {
+      "name": "5ELements Pro Muaytha-Shorts",
+      "price": "30,00€–35,00€",
+      "description": "Die 5Elements Muay Thai-Hosen sind ein unverzichtbares Kleidungsstück für jeden ernsthaften Muay Thai-Praktizierenden. Sorgfältig entwickelt, um maximalen Komfort und uneingeschränkte Bewegungsfreiheit zu gewährleisten. Hergestellt aus hochwertigen Materialien, die Strapazierfähigkeit und Atmungsaktivität bieten. Angenehmes Tragegefühl, das Ihnen hilft, sich auf Ihre Techniken zu konzentrieren. Ideal für Training im Gym oder intensive Wettkämpfe im Ring. Durchdachtes Design und erstklassige Qualität bieten Komfort, Funktionalität und Stil.",
+      "categories": [
+        "BEKLEIDUNG",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "Muaythai"
+      ],
+      "sku": "MTHM001",
+      "url": "https://5elements-sports.com/product/5elements-pro-muaytha-shorts/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:33.009135"
+    },
+    {
+      "name": "5Elements Pro Muaythai Pratzen",
+      "price": "180,00€",
+      "description": "5Elements Pro Muaythai Pratzen, handgefertigt aus hochwertigem Echtleder für lang anhaltende Qualität Robustes Design mit einer leichten Schwere, um maximale Schlagkraft zu absorbieren Verstellbar mit zwei Klettverschlussriemen am Unterarm, perfekt für Kicks dank ihrer gebogenen Form",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11456",
+      "url": "https://5elements-sports.com/product/5elements-pro-muaythai-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:36.534129"
+    },
+    {
+      "name": "5Elements Profi Boxhandschuh",
+      "price": "140,00€",
+      "description": "Hochwertige Profi Boxhandschuhe von 5ELements Handgefertigt aus echtem Leder für beste Qualität Zusätzliche Polsterung mit Pferdehaar für optimalen Schutz Erhältlich in den Farben Schwarz, Weiß, Blau und Rot Mit Schnürung fr individuelle Passform und sicheren Halt “",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B007",
+      "url": "https://5elements-sports.com/product/5elements-profi-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0  '%2F%3E",
+      "scraped_at": "2026-04-02T19:03:40.136023"
+    },
+    {
+      "name": "5Elements Puzzel-Matten 2 cm",
+      "price": "35,00€",
+      "description": "5Elements Puzzlematten: 2 cm dicke EVA-Schaumstoffmatten, ideal für Heimfitness, Kampfsportarten wie Boxen & Kickboxen sowie Spielbereiche für Kinder. Rutschfest, strapazierfähig und leicht zu reinigen mit hervorragender Stoßdämpfung.",
+      "categories": [
+        "Boden/Matten",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS"
+      ],
+      "sku": "MT2CMN",
+      "url": "https://5elements-sports.com/product/5elements-puzzel-matten-2-cm/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:43.706089"
+    },
+    {
+      "name": "5Elements Puzzel-Matten 4 cm",
+      "price": "55,00€",
+      "description": "5Elements Puzzlematten (4 cm) – Extra dicke EVA-Matten für maximale Dämpfung und Schutz. Ideal für Kampfsportarten, Bodentraining und Bereiche mit hoher Belastung. Rutschfest, strapazierfähig und leicht zu verlegen.",
+      "categories": [
+        "Boden/Matten",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS"
+      ],
+      "sku": "MT4CM",
+      "url": "https://5elements-sports.com/product/5elements-puzzel-matten-4-cm/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:47.239227"
+    },
+    {
+      "name": "5Elements Quick Handbandage",
+      "price": "13,00€",
+      "description": "5ELements Quick Handbandage: Schneller und einfacher Schutz Hergestellt aus strapazierfähigem, elastischem Material Einfaches Anlegen für bequeme und sichere Passform Ideal für Boxen, MMA und andere Kampfsportarten",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "QBH",
+      "url": "https://5elements-sports.com/product/5elements-quick-handbandage/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:03:50.844882"
+    },
+    {
+      "name": "5Elements Quick Innenhandschuhe mit Gel",
+      "price": "15,00€",
+      "description": "5ELements Quick Innenhandschuhe mit Gel: Schneller und bequemer Schutz Hochwertiges Material mit integrierter Gelpolsterung Einfaches Anziehen und ideal für zusätzlichen Handschutz Perfekt für Boxen, MMA und andere Kampfsportarten",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Bandagen",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "GHB001",
+      "url": "https://5elements-sports.com/product/5elements-quick-innenhandschuhe-mit-gel/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:03:54.396164"
+    },
+    {
+      "name": "5Elements Round-Handmitt",
+      "price": "35,00€",
+      "description": "5Elements Round-Handmitt, entworfen, um Schlag- und Tritttechniken zu verbessern Ideal für verschiedene Kampfsportarten, einschlieﬂlich Boxen, Kickboxen und MMA",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11447",
+      "url": "https://5elements-sports.com/product/5elements-round-handmitt/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 600'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:01.334504"
+    },
+    {
+      "name": "5Elements Sandsack 1,50m",
+      "price": "180,00€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "Sandsack",
+        "TAEKWONDO"
+      ],
+      "sku": "SS150",
+      "url": "https://5elements-sports.com/product/5elements-sandsack-150m/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:04:05.214538"
+    },
+    {
+      "name": "5Elements Sandsack 1,80m",
+      "price": "220,00€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "Sandsack",
+        "TAEKWONDO"
+      ],
+      "sku": "SS180",
+      "url": "https://5elements-sports.com/product/5elements-sandsack-180m/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:04:08.774800"
+    },
+    {
+      "name": "5Elements Sandsack Boxhandschuh",
+      "price": "55,00€",
+      "description": "Hochwertiges Echtleder: Langlebig und strapazierfähig für intensives Training. Dicke Schaumstoffpolsterung: Bietet hervorragende Stoßdämpfung und Schutz für Hände und Handgelenke. Ergonomisches Design: Passt sich der natürlichen Handform an und sorgt für hohen Tragekomfort. Verstellbare Klettverschlüsse: Sicherer Sitz und kein Verrutschen während des Trainings. Atmungsaktives Innenfutter: Hält die Hände trocken und bequem. Verschiedene Größen und Farben: Für eine individuelle Passform und persönlichen Stil.",
+      "categories": [
+        "BOXEN",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "Sandsackhandschuhe"
+      ],
+      "sku": "SSB001",
+      "url": "https://5elements-sports.com/product/5elements-sandsack-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:12.442293"
+    },
+    {
+      "name": "5Elements Satin Lang-Hose",
+      "price": "30,00€–35,00€",
+      "description": "Premium Satin-Stoff: Weich, atmungsaktiv und langlebig für maximalen Komfort und Leistung. Verbesserte Beweglichkeit: Ergonomisches Design ermöglicht vollständige Bewegungsfreiheit bei Kicks und Schlägen. Feuchtigkeitsableitend: Hält Sie kühl und trocken durch effektives Feuchtigkeitsmanagement. Verstärkte Nähte: An wichtigen Stresspunkten verstärkt für lange Haltbarkeit. Vielseitige Verwendung: Ideal für Kickboxen, Point Fighting und verschiedene Kampfsportarten. Stilvolle Optionen: Erhältlich in verschiedenen Größen und Farben für Ihren Stil und Ihre Bedürfnisse.",
+      "categories": [
+        "BEKLEIDUNG",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "Pointfight/Semi Contact"
+      ],
+      "sku": "SLH001",
+      "url": "https://5elements-sports.com/product/5elements-satin-lang-hose/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:04:16.056045"
+    },
+    {
+      "name": "5Elements Schaumstoff-Kopfschutz mit Visier",
+      "price": "65,00€",
+      "description": "Hochdichter Schaumstoff: Absorbiert und verteilt Aufprallkräfte für optimalen Kopfschutz. Integriertes Visier: Schützt Gesicht, Augen und Nase vor direkten Treffern. Verstellbare Riemen: Individuell anpassbar für sicheren und komfortablen Sitz. Atmungsaktives Innenfutter: Hält den Helm trocken und komfortabel bei intensiven Einheiten. Anti-Schweiß-Beschichtung: Reduziert Feuchtigkeitsansammlung für zusätzlichen Komfort. Verschiedene Größen und Farben: Für eine maßgeschneiderte Passform und persönlichen Stil.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KARATE",
+        "Kopfschutz",
+        "KUNGFU",
+        "TAEKWONDO"
+      ],
+      "sku": "KS001",
+      "url": "https://5elements-sports.com/product/5elements-schaumstoff-kopfschutz-mit-visier/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:19.709652"
+    },
+    {
+      "name": "5elements Schaumstoff-Kopfschutz",
+      "price": "55,00€",
+      "description": "5Elements Schaumstoff-Kopfschutz, schweiﬂresistent und passgenau Geeignet für Taekwondo, Kickboxing und viele andere Kampfsportarten Erhältlich in den Größen von XS bis XL und den Farben Rot, Blau, Weiß und Schwarz",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "TAEKWONDO"
+      ],
+      "sku": "11467",
+      "url": "https://5elements-sports.com/product/5elements-schaumstoff-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:23.467189"
+    },
+    {
+      "name": "5Elements Schienbeinschoner-Socken ohne Fuß",
+      "price": "28,00€",
+      "description": "Mit den 5Elements Schienbeinschonern ohne Fuß schützen Sie Ihre Schienbeine effektiv vor Verletzungen. Diese Schoner bieten einen sicheren, bequemen Sitz und hervorragenden Schutz, während sie sich perfekt an Ihre Beinmuskulatur anpassen. Ideal für intensives Training und Wettkämpfe.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Schienbeinschutz",
+        "TAEKWONDO"
+      ],
+      "sku": "SSOF--001",
+      "url": "https://5elements-sports.com/product/5elements-schienbeinschoner-socken-ohne-fuss/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:27.564934"
+    },
+    {
+      "name": "5Elements Schienbeinschoner-Socken",
+      "price": "35,00€",
+      "description": "Material: Hochwertiges, atmungsaktives und elastisches Gewebe Design: Integrierte Schienbeinschoner für optimalen Schutz Komfort: Ergonomische Passform für maximalen Tragekomfort Größen: Verfügbar in verschiedenen Größen für eine perfekte Passform Anwendung: Ideal für Kampfsportarten wie Muay Thai, Kickboxen und MMA",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "Schienbeinschutz"
+      ],
+      "sku": "SSS01",
+      "url": "https://5elements-sports.com/product/5elements-schienbeinschoner-socken/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:31.405703"
+    },
+    {
+      "name": "5ELements Schlagpolster, gebogen",
+      "price": "75,01€",
+      "description": "5Elementsgebogenes Schlagpolster, entwickelt für effektives Training von Tritttechniken Ergonomisch geformt für verbesserte Schlagabsorption und Tragekomfort Ideal für harte Tritte dank seiner Dicke, die den Großteil des Drucks absorbiert",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11444",
+      "url": "https://5elements-sports.com/product/5elements-schlagpolster-gebogen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:35.829182"
+    },
+    {
+      "name": "5Elements Schlagpolster, gerade",
+      "price": "75,01€",
+      "description": "5Elements gerades Schlagpolster, entwickelt für präzises Training von Schlagtechniken Robuste Konstruktion für verbesserte Schlagabsorption und Langlebigkeit.",
+      "categories": [
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11443",
+      "url": "https://5elements-sports.com/product/5elements-schlagpolster-gerade/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:39.360700"
+    },
+    {
+      "name": "5Elements Schwitzanzug",
+      "price": "59,99€",
+      "description": "Fortschrittliches Material: Wasserdichtes, wärmespeicherndes Material für erhöhte Schweißproduktion. Effektive Wärmeverteilung: Fördert Fettverbrennung und entfernt Giftstoffe durch intensives Schwitzen. Leicht und Flexibel: Bietet uneingeschränkte Bewegungsfreiheit während des Trainings. Verstärkte Nähte: Robuste Nähte für zusätzliche Haltbarkeit und Langlebigkeit. Verschiedene Größen: Erhältlich in verschiedenen Größen für eine maßgeschneiderte Passform. Ideal für Fitnessziele: Unterstützt effizientes Gewicht-Management und intensive Trainingseinheiten.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "Hosen",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression",
+        "Muaythai",
+        "Pointfight/Semi Contact",
+        "TAEKWONDO",
+        "Zubehör"
+      ],
+      "sku": "SWA001",
+      "url": "https://5elements-sports.com/product/5elements-schwitzanzug/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:04:43.156225"
+    },
+    {
+      "name": "5Elements Sparring Profi-Kopfschutz",
+      "price": "90,00€",
+      "description": "Hochwertiges Echtleder: Langlebig und robust für umfassenden Schutz. Dicke Polsterung: Effektive Stoßdämpfung und Reduzierung des Verletzungsrisikos. Offenes Kinn-Design: Bietet uneingeschränkte Bewegungsfreiheit und klare Atmung. Schnürung auf der Rückseite: Ermöglicht eine präzise Anpassung und sicheren Sitz. Atmungsaktives Innenfutter: Hält den Kopf trocken und komfortabel während des Trainings. Verschiedene Größen: Für eine individuelle Passform und optimalen Schutz.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "MMA"
+      ],
+      "sku": "KSLS001",
+      "url": "https://5elements-sports.com/product/5elements-sparring-profi-kopfschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:46.811920"
+    },
+    {
+      "name": "5Elements Spear Boxhandschuh",
+      "price": "50,00€",
+      "description": "Entfalten Sie Ihr Potenzial mit unseren Premium Kunstleder-Boxhandschuhen, die speziell für Anfänger und Sportbegeisterte entwickelt wurden. Hergestellt aus hochwertigen synthetischen Materialien bieten diese Handschuhe außergewöhnliche Haltbarkeit und Komfort, ideal für intensive Trainingseinheiten.",
+      "categories": [
+        "BOXEN",
+        "Boxhandschuhe",
+        "HANDSCHUHE",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA"
+      ],
+      "sku": "B009",
+      "url": "https://5elements-sports.com/product/5elements-spear-boxhandschuh/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:50.643394"
+    },
+    {
+      "name": "5ELements Sport-Tasche, groß",
+      "price": "55,00€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO",
+        "Zubehör",
+        "ZUBEHÖR"
+      ],
+      "sku": "GST001",
+      "url": "https://5elements-sports.com/product/5elements-sport-tasche-gross/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:04:54.362649"
+    },
+    {
+      "name": "5Elements Springseil 2.0",
+      "price": "25,00€",
+      "description": "Metallgriffe: Ergonomisch und drehbar Ideal für schnelles Seilspringen Hochwertige Kugellager: Für reibungslose Rotation Verstellbare Länge: Anpassbar für jede Körpergröße Langlebiges Material: Robust und strapazierfähig”",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO",
+        "Zubehör",
+        "ZUBEHÖR"
+      ],
+      "sku": "11442",
+      "url": "https://5elements-sports.com/product/5elements-springseil-2-0/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:04:57.883922"
+    },
+    {
+      "name": "5Elements Springseile",
+      "price": "15,01€",
+      "description": "Verstellbarkeit: Viele Modelle erlauben eine einfache Längenanpassung, sodass sie perfekt für jede Körpergröße passen. Material: Achten Sie auf Seile aus hochwertigen Materialien wie PVC-beschichtetem Stahl für Haltbarkeit und eine geschmeidige Rotation. Griffe: Ergonomische, rutschfeste Griffe sind entscheidend, um während intensiver Workouts den Halt zu bewahren.",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO",
+        "ZUBEHÖR",
+        "Zubehör"
+      ],
+      "sku": "11471",
+      "url": "https://5elements-sports.com/product/5elements-springseile/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:01.573813"
+    },
+    {
+      "name": "5Elements Taekwondo-Anzug leichter Stoff, schwarzes Rever",
+      "price": "80,00€",
+      "description": "5elements Taekwondo Anzug aus leichtem Stoff mit schwarzem Rever Leichter Stoff: Bietet eine perfekte Balance zwischen Komfort und Bewegungsfreiheit. Schwarzes Rever: Für einen modernen, stilvollen Look und professionelle Ausstrahlung. Atmungsaktiv und strapazierfähig: Hält Sie auch bei intensiven Trainingseinheiten kühl und trocken. Pflegeleicht: Einfach zu reinigen und langlebig. Vielseitig: Ideal für Training, Wettkämpfe und offizielle Veranstaltungen. Verleihen Sie Ihrem Taekwondo-Auftritt mit diesem Anzug aus Lite Stoff und schwarzem Rever einen Hauch von Klasse und Komfort.",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "11478",
+      "url": "https://5elements-sports.com/product/5elements-taekwondo-anzug-leichter-stoff-schwarzes-rever/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:06.530042"
+    },
+    {
+      "name": "5ELements Taekwondo Fußschützer",
+      "price": "30,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Taekwondo",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDF--001",
+      "url": "https://5elements-sports.com/product/5elements-taekwondo-fussschuetzer/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 825'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:11.058910"
+    },
+    {
+      "name": "5ELements Taekwondo Kampfweste Rot/Blau",
+      "price": "40,00€–45,00€",
+      "description": "5Elements Taekwondo Kampfweste Die 5Elements Taekwondo Kampfweste bietet hervorragenden Schutz und Komfort während des Sparrings. Mit hochwertigem, leichtem Material und verstärktem Polsterschutz sorgt sie für maximale Sicherheit bei jedem Treffer. Ideal für Training und Wettkämpfe.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Taekwondo",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDWS--001",
+      "url": "https://5elements-sports.com/product/5elements-taekwondo-kampfweste-rot-blau/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:05:14.695170"
+    },
+    {
+      "name": "5Elements Taekwondo-Schuhe",
+      "price": "35,00€",
+      "description": "Leichtes Design: Bietet uneingeschränkte Bewegungsfreiheit für mehr Agilität. Flexible Sohle: Perfekt für präzise Kicks, schnelle Fußarbeit und nahtlose Übergänge. Atmungsaktives Obermaterial: Hält die Füße während intensiver Trainings trocken und kühl. Rutschfeste Sohle: Sorgt für optimalen Halt auf verschiedenen Oberflächen. Verfügbar in mehreren Größen: Garantiert die perfekte Passform für alle Sportler. Steigern Sie Ihre Leistung mit Schuhen, die so dynamisch sind wie Ihre Taekwondo-Fähigkeiten.",
+      "categories": [
+        "TAEKWONDO",
+        "Zubehör"
+      ],
+      "sku": "11476",
+      "url": "https://5elements-sports.com/product/5elements-taekwondo-schuhe/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 399'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:18.426249"
+    },
+    {
+      "name": "5ELements Tasche",
+      "price": "40,00€",
+      "description": "",
+      "categories": [
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO",
+        "ZUBEHÖR",
+        "Zubehör"
+      ],
+      "sku": "TB001",
+      "url": "https://5elements-sports.com/product/5elements-tasche/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:05:21.916886"
+    },
+    {
+      "name": "5Elements Tennis-Pratzen",
+      "price": "49,90€",
+      "description": "5Elements Tennis-Pratzen – Speed & Präzision Trainiere Schnelligkeit, Zielgenauigkeit und Reaktion mit den Tennis-Pratzen von 5Elements. Ideal für Boxing, Taekwondo, Kickboxen & mehr. Superleicht, langlebig und perfekt für blitzschnelle Kombinationen. ✅ Ultraleicht & flexibel ✅ Ideal für Präzisions- & Speed-Drills ✅ Robuste Materialien für tägliches Training",
+      "categories": [
+        "BOXEN",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "PRTP--001",
+      "url": "https://5elements-sports.com/product/5elements-tennis-pratzen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:25.447972"
+    },
+    {
+      "name": "5Elements Tiefschutz, Frauen",
+      "price": "18,00€",
+      "description": "5Elements Frauen-Tiefschutz: Maßgeschneiderter Schutz für das weibliche Geschlecht Speziell für die weibliche Anatomie entwickelt Bietet eine bequeme und sichere Passform Erhältlich in verschiedenen Größen für die perfekte Passform Ideal für Kampfsport, Sport und aktive Lebensstile",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Tiefschutz"
+      ],
+      "sku": "MTS002",
+      "url": "https://5elements-sports.com/product/5elements-tiefschutz-frauen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 742'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:29.099062"
+    },
+    {
+      "name": "5Elements Tiefschutz",
+      "price": "15,00€",
+      "description": "Produktname: 5Elements Tiefschutz Material: Hochwertiger Kunststoff und elastisches Band Funktion: Effektiver Schutz für empfindliche Bereiche während sportlicher Aktivitäten Eigenschaften: Atmungsaktives Design, ergonomische Passform, leicht zu reinigen Größen: Verfügbar in verschiedenen Größen für optimale Passform",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "TAEKWONDO",
+        "Tiefschutz"
+      ],
+      "sku": "MTS001",
+      "url": "https://5elements-sports.com/product/5elements-tiefschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 800'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:32.631182"
+    },
+    {
+      "name": "5Elements Trainings  Anzug",
+      "price": "95,00€",
+      "description": "",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "TAEKWONDO",
+        "Zubehör"
+      ],
+      "sku": "TAW--001",
+      "url": "https://5elements-sports.com/product/5elements-trainings-anzug/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:36.371114"
+    },
+    {
+      "name": "5Elements Trainingsjacke",
+      "price": "55,00€",
+      "description": "Unisex Trainingsjacke von 5Elements in Schwarz und Weiß. Leicht, atmungsaktiv und ideal für Sport und Freizeit. Mit elastischem Bund und praktischen Taschen für zusätzlichen Komfort.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "KARATE",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "TAEKWONDO"
+      ],
+      "sku": "TAWB--001",
+      "url": "https://5elements-sports.com/product/5elements-trainingsjacke/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:40.843918"
+    },
+    {
+      "name": "5Elements “Unleash The ELements” Funktional T-Shirt",
+      "price": "34,99€–39,99€",
+      "description": "Trainiere mit maximaler Leistung im 5Elements Funktional T-Shirt. Entwickelt für Komfort, Atmungsaktivität und Bewegungsfreiheit. Dieses unisex Funktionsshirt wurde speziell für Kampfsportler, Fitness-Enthusiasten und alle, die aktiv bleiben wollen, entwickelt. Das ultraleichte Material mit feinen Belüftungslöchern sorgt für optimale Luftzirkulation und hält dich auch bei intensiven Trainingseinheiten angenehm kühl und trocken. Der ergonomische Schnitt bietet volle Bewegungsfreiheit, perfekt für Kampfsport, Krafttraining, Cardio oder spezielle Workouts. Egal ob im Studio, auf der Matte oder im",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "Ftshirt-001",
+      "url": "https://5elements-sports.com/product/5elements-unleash-the-elements-funktional-t-shirt/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:44.427073"
+    },
+    {
+      "name": "5Elements “Unleash The Elements” MMA-Shorts",
+      "price": "44,99€",
+      "description": "",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "Hosen",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "U",
+      "url": "https://5elements-sports.com/product/5elements-unleash-the-elements-mma-shorts/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:47.980957"
+    },
+    {
+      "name": "5Elements “Unleash The ELements” Rashguard",
+      "price": "39,99€",
+      "description": "Entfessle dein volles Potenzial mit dem 5Elements Rashguard – aus elastischem Material für eine perfekte Passform und mit Gummibund am Saum, damit nichts verrutscht – egal wie hart du trainierst.",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "11492",
+      "url": "https://5elements-sports.com/product/5elements-unleash-the-elements-rashguard/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 876'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:51.653598"
+    },
+    {
+      "name": "5Elementsg Pratzen, gebogen",
+      "price": "45,01€",
+      "description": "5Elements gebogene Pratzen, entworfen, um Schlag- und Tritttechniken zu verbessern Bietet eine natürliche Krümmung für verbesserte Ergonomie und Schlagabsorption",
+      "categories": [
+        "KICKBOXEN/MUAYTHAI",
+        "KUNGFU",
+        "MMA",
+        "Pratzen",
+        "PRATZEN & AUSRÜSTUNG FÜR KAMPFSPORTSTUDIOS",
+        "TAEKWONDO"
+      ],
+      "sku": "11445",
+      "url": "https://5elements-sports.com/product/5elementsg-pratzen-gebogen/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:05:55.243986"
+    },
+    {
+      "name": "5Elments BJJ Kindergürtel",
+      "price": "15,00€",
+      "description": "Material: Hochwertige Baumwolle Design: Robuste und langlebige Verarbeitung Farben: Erhältlich in verschiedenen Farben zur Unterscheidung der Rangstufen Größen: Verfügbar in verschiedenen Längen für Kinder Anwendung: Ideal für Kinder im Brazilian Jiu-Jitsu (BJJ)",
+      "categories": [
+        "GRAPPLING",
+        "JU-JUTSU",
+        "JUDO",
+        "ZUBEHÖR"
+      ],
+      "sku": "10537",
+      "url": "https://5elements-sports.com/product/5elments-bjj-kinderguertel/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:05:58.994686"
+    },
+    {
+      "name": "Box-Kopfschutz mit Schnürsenkel, offenes Kinn",
+      "price": "90,00€",
+      "description": "Entdecken Sie den 5Elements Box-Kopfschutz, handgefertigt aus hochwertigem Echtleder für unübertroffene Qualität und Leistung. Mit einem offenen Kinn für Atmungsaktivität und Agilität ist dieser Kopfschutz ein Muss für Box-Enthusiasten. Von Profis verwendet, gewährleistet seine erstklassige Verarbeitung Haltbarkeit und Schutz im Ring. Erhältlich in den Größen von XS bis XL und verstellbar mit den Schnürsenkeln auf der Rückseite",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "BOXEN",
+        "KICKBOXEN/MUAYTHAI",
+        "Kopfschutz",
+        "KUNGFU",
+        "MMA"
+      ],
+      "sku": "11470",
+      "url": "https://5elements-sports.com/product/box-kopfschutz-mit-schnuersenkel-offenes-kinn/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 450'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:02.678916"
+    },
+    {
+      "name": "Karate Schienbeinschutz",
+      "price": "48,00€",
+      "description": "Der 5ELements Karate Schienbeinschutz ist ein robuster und komfortabler Schienbeinschutz, der Karateka während des Trainings und Wettkampfs schützt. Hergestellt aus hochwertigem Echtleder und mit mehrlagiger Schaumstoffpolsterung bietet er ausgezeichnete Stoßdämpfung und Schutz. Die verstellbaren Klettverschlüsse sorgen für einen sicheren Sitz und machen ihn zu einem unverzichtbaren Ausrüstungsgegenstand für jeden Karateka.",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "KARATE",
+        "Schienbeinschutz"
+      ],
+      "sku": "11482",
+      "url": "https://5elements-sports.com/product/karate-schienbeinschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 901'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:06.820129"
+    },
+    {
+      "name": "Kopie von 5Elements “Dunkle Klinge” Rashguard #1",
+      "price": "39,99€",
+      "description": "",
+      "categories": [
+        "BEKLEIDUNG",
+        "BOXEN",
+        "Casual",
+        "GRAPPLING",
+        "JU-JUTSU",
+        "KICKBOXEN/MUAYTHAI",
+        "MMA",
+        "MMA Kompression"
+      ],
+      "sku": "11500",
+      "url": "https://5elements-sports.com/product/kopie-von-5elements-dunkle-klinge-rashguard-1/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:06:10.517745"
+    },
+    {
+      "name": "Taekwondo-Anzug leichter Stoff mit Logo",
+      "price": "75,00€",
+      "description": "",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDALS--001",
+      "url": "https://5elements-sports.com/product/taekwondo-anzug-leichter-stoff-mit-logo/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:14.135595"
+    },
+    {
+      "name": "Taekwondo-Anzug leichter Stoff, schwarz",
+      "price": "75,00€",
+      "description": "",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDLS--001",
+      "url": "https://5elements-sports.com/product/taekwondo-anzug-leichter-stoff-schwarz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:17.797913"
+    },
+    {
+      "name": "Taekwondo-Anzug leichter Stoff, weiß",
+      "price": "75,00€",
+      "description": "",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDLW--001",
+      "url": "https://5elements-sports.com/product/taekwondo-anzug-leichter-stoff-weiss/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:21.495670"
+    },
+    {
+      "name": "Taekwondo-Anzug mit gesticktem Logo",
+      "price": "45,00€",
+      "description": "Taekwondo-Anzug mit gesticktem Logo Dieser hochwertige Taekwondo-Anzug vereint Komfort und Stil. Das elegante, gestickte Logo auf der Brust sorgt für einen professionellen Look, während der Anzug aus strapazierfähigem Material für optimale Bewegungsfreiheit sorgt. Ideal für Training und Wettkämpfe.",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDAS--001",
+      "url": "https://5elements-sports.com/product/taekwondo-anzug-mit-gesticktem-logo/",
+      "image_url": "https://wsrv.nl/?url=https://5elements-sports.com/wp-content/uploads/woocommerce-placeholder-600x600.png",
+      "scraped_at": "2026-04-02T19:06:25.197393"
+    },
+    {
+      "name": "Taekwondo-Anzug Weiß/Schwarz",
+      "price": "35,00€",
+      "description": "",
+      "categories": [
+        "Anzüge",
+        "BEKLEIDUNG",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDN--001",
+      "url": "https://5elements-sports.com/product/taekwondo-anzug-weiss-schwarz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 902'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:29.882541"
+    },
+    {
+      "name": "Taekwondo Handschutz",
+      "price": "30,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "HANDSCHUHE",
+        "Taekwondo",
+        "TAEKWONDO",
+        "Taekwondo und Karate Handschuhe"
+      ],
+      "sku": "TKDH--001",
+      "url": "https://5elements-sports.com/product/taekwondo-handschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:33.547466"
+    },
+    {
+      "name": "Taekwondo Schienbeinschützer mit Spannschutz",
+      "price": "35,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Schienbeinschutz",
+        "Taekwondo",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDSP--001",
+      "url": "https://5elements-sports.com/product/taekwondo-schienbeinschuetzer-mit-spannschutz/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:37.546893"
+    },
+    {
+      "name": "Taekwondo Schienbeinschützer",
+      "price": "35,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Schienbeinschutz",
+        "Taekwondo"
+      ],
+      "sku": "TKDS--001",
+      "url": "https://5elements-sports.com/product/taekwondo-schienbeinschuetzer/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:41.303005"
+    },
+    {
+      "name": "Taekwondo Unterarmschützer",
+      "price": "30,00€",
+      "description": "",
+      "categories": [
+        "2 SCHUTZAUSRÜSTUNG",
+        "Taekwondo",
+        "TAEKWONDO"
+      ],
+      "sku": "TKDU--001",
+      "url": "https://5elements-sports.com/product/taekwondo-unterarmschuetzer/",
+      "image_url": "data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 600 900'%2F%3E",
+      "scraped_at": "2026-04-02T19:06:44.937574"
     }
-  ],
-  "metadata": {
-    "total_products": 12,
-    "scraped_at": "2026-04-01T10:00:00",
-    "source": "sample-data",
-    "note": "Replace this file by running: cd backend/data_pipeline && python scrape_5elements.py"
-  }
+  ]
 }
