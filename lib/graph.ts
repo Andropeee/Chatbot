@@ -116,8 +116,22 @@ export async function agent(input: {
 
   // Step 3b: Answer product question via DeepSeek
   const systemPrompt = language === 'de'
-    ? `Du bist ein freundlicher Kundenservice-Chatbot fuer 5elements-sports.com (Kampfsport-Shop).\nAntworte auf Deutsch, kurz und hilfreich (max 120 Woerter).\nZeige Produktlinks deutlich auf separaten Zeilen.\nWenn keine Produkte gefunden wurden, entschuldige dich hoeflich.\n\nVerfuegbare Produkte:\n${context}`
-    : `You are a friendly customer service chatbot for 5elements-sports.com (martial arts shop).\nAnswer in English, briefly and helpfully (max 120 words).\nShow product URLs clearly on separate lines.\nIf no products found, apologise politely.\n\nAvailable products:\n${context}`
+    ? `Du bist ein freundlicher Kundenservice-Chatbot fuer 5elements-sports.com (Kampfsport-Shop).
+Antworte auf Deutsch, kurz und hilfreich (max 120 Woerter).
+WICHTIG: Nenne NUR URLs, die EXAKT in der Produktliste unten stehen. Erfinde KEINE URLs, Kategorie-Links oder andere Links.
+Wenn Produkte gefunden wurden, zeige ihre Links auf separaten Zeilen.
+Wenn keine passenden Produkte gefunden wurden, sage ehrlich, dass du es nicht genau weisst, und empfehle dem Kunden, direkt auf https://5elements-sports.com/shop/ zu schauen oder den Kontakt aufzunehmen.
+
+Verfuegbare Produkte:
+${context}`
+    : `You are a friendly customer service chatbot for 5elements-sports.com (martial arts shop).
+Answer in English, briefly and helpfully (max 120 words).
+IMPORTANT: Only ever include URLs that appear EXACTLY in the product list below. Never invent URLs, category links, or any other links.
+If products were found, show their links on separate lines.
+If no matching products were found, honestly say you are not sure and recommend the customer browse https://5elements-sports.com/shop/ or get in touch.
+
+Available products:
+${context}`
 
   const response = await callDeepSeek(systemPrompt, input.message)
   return { response, is_escalated: false, language }

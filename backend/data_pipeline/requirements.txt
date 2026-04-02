@@ -2,21 +2,4 @@
 # Install with: pip install -r requirements.txt
 
 requests==2.31.0
-beautifulsoup4==4.12.3
 python-dotenv==1.0.1
-
-# LangChain + LangGraph
-langchain==0.2.16
-langchain-community==0.2.16
-langchain-openai==0.1.22
-langgraph==0.2.16
-
-# Vector DB (local, SQLite-backed)
-chromadb==0.5.3
-
-# Embeddings (HuggingFace, runs locally — no API key needed)
-sentence-transformers==3.0.1
-torch==2.3.1   # CPU-only; remove version pin if you have a GPU
-
-# Utilities
-tqdm==4.66.4
