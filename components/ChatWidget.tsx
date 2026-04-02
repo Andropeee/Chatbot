@@ -209,8 +209,9 @@ export function ChatWidget() {
         {/* ── Header ─────────────────────────────────────────────── */}
         <div className="bg-[#0d0d0d] text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-[#E63B3B] flex items-center justify-center text-lg font-bold flex-shrink-0">
-              5
+            <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden p-1">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logotype.png" alt="5elements logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h3 className="font-bold text-base leading-tight">5elements Support</h3>
