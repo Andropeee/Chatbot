@@ -1,0 +1,352 @@
+'use client'
+
+import { useState, useRef, useEffect } from 'react'
+import axios from 'axios'
+import toast, { Toaster } from 'react-hot-toast'
+
+// ════════════════════════════════════════════════════
+// Types
+// ════════════════════════════════════════════════════
+
+type Language = 'en' | 'de'
+
+interface Message {
+  id: string
+  role: 'user' | 'bot'
+  content: string
+  timestamp: Date
+  language: Language
+}
+
+interface ContactInfo {
+  name: string
+  email: string
+  phone: string
+}
+
+// ════════════════════════════════════════════════════
+// Helpers
+// ════════════════════════════════════════════════════
+
+function detectLanguage(text: string): Language {
+  if (/[äöüÄÖÜß]/.test(text)) return 'de'
+  const textLower = text.toLowerCase()
+  const germanKw = ['habt', 'gibt', 'haben', 'größe', 'preis', 'bitte', 'danke', 'kaufen']
+  const deCount = germanKw.filter((w) => textLower.includes(w)).length
+  return deCount >= 2 ? 'de' : 'en'
+}
+
+/** Render message text, making URLs clickable */
+function MessageContent({ text, role }: { text: string; role: 'user' | 'bot' }) {
+  if (role === 'user') {
+    return <p className="text-sm whitespace-pre-wrap">{text}</p>
+  }
+
+  // Split on URLs so we can render links
+  const urlRegex = /(https?:\/\/[^\s]+)/g
+  const parts = text.split(urlRegex)
+
+  return (
+    <div className="text-sm space-y-1 whitespace-pre-wrap">
+      {parts.map((part, i) =>
+        urlRegex.test(part) ? (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 underline break-all block"
+          >
+            🔗 {part}
+          </a>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </div>
+  )
+}
+
+// ════════════════════════════════════════════════════
+// Chat Widget
+// ════════════════════════════════════════════════════
+
+const INITIAL_MESSAGE: Message = {
+  id: '0',
+  role: 'bot',
+  content:
+    'Hallo! 👋 Wie kann ich dir helfen?\nHello! 👋 How can I help?\n\nAsk me about our boxing gloves, MMA gear, protective equipment and more!',
+  timestamp: new Date(),
+  language: 'de',
+}
+
+export function ChatWidget() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE])
+  const [input, setInput] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [language, setLanguage] = useState<Language>('en')
+  const [showContactForm, setShowContactForm] = useState(false)
+  const [contact, setContact] = useState<ContactInfo>({ name: '', email: '', phone: '' })
+  const [contactSubmitted, setContactSubmitted] = useState(false)
+
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  // Auto-scroll to bottom when messages change
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages, showContactForm])
+
+  // Focus input when chat opens
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => inputRef.current?.focus(), 100)
+    }
+  }, [isOpen])
+
+  const sendMessage = async () => {
+    const text = input.trim()
+    if (!text || loading) return
+
+    const detectedLang = detectLanguage(text)
+    setLanguage(detectedLang)
+    setInput('')
+    setLoading(true)
+
+    const userMsg: Message = {
+      id: Date.now().toString(),
+      role: 'user',
+      content: text,
+      timestamp: new Date(),
+      language: detectedLang,
+    }
+    setMessages((prev) => [...prev, userMsg])
+
+    try {
+      const { data } = await axios.post('/api/chat', {
+        message: text,
+        customer_name: contact.name || undefined,
+        customer_email: contact.email || undefined,
+        customer_phone: contact.phone || undefined,
+        language: detectedLang,
+      })
+
+      const botMsg: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'bot',
+        content: data.response,
+        timestamp: new Date(),
+        language: data.language ?? detectedLang,
+      }
+      setMessages((prev) => [...prev, botMsg])
+
+      if (data.ask_for_contact && !contactSubmitted) {
+        setShowContactForm(true)
+      }
+    } catch {
+      const errMsg =
+        detectedLang === 'de'
+          ? 'Fehler beim Senden. Bitte versuche es erneut.'
+          : 'Error sending message. Please try again.'
+      toast.error(errMsg)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const handleContactSubmit = () => {
+    if (!contact.name && !contact.email && !contact.phone) {
+      const msg = language === 'de' ? 'Bitte mindestens ein Feld ausfüllen.' : 'Please fill in at least one field.'
+      toast.error(msg)
+      return
+    }
+    setContactSubmitted(true)
+    setShowContactForm(false)
+
+    const confirmMsg: Message = {
+      id: Date.now().toString(),
+      role: 'bot',
+      content:
+        language === 'de'
+          ? '✅ Danke! Unser Team meldet sich in Kürze bei dir.'
+          : '✅ Thank you! Our team will be in touch shortly.',
+      timestamp: new Date(),
+      language,
+    }
+    setMessages((prev) => [...prev, confirmMsg])
+  }
+
+  // ── Closed state: floating button ──────────────────────────────────────
+
+  if (!isOpen) {
+    return (
+      <>
+        <Toaster position="bottom-left" />
+        <button
+          onClick={() => setIsOpen(true)}
+          className="fixed bottom-4 right-4 w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 z-50 focus:outline-none focus:ring-4 focus:ring-blue-300"
+          aria-label="Open chat"
+          title="Chat with 5elements Support"
+        >
+          💬
+        </button>
+      </>
+    )
+  }
+
+  // ── Open state: chat panel ──────────────────────────────────────────────
+
+  return (
+    <>
+      <Toaster position="bottom-left" />
+
+      <div
+        role="dialog"
+        aria-label="5elements Support Chat"
+        className="fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50"
+      >
+        {/* ── Header ─────────────────────────────────────────────── */}
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">
+          <div>
+            <h3 className="font-bold text-lg leading-tight">5elements Support 🥊</h3>
+            <p className="text-xs text-blue-200 mt-0.5">
+              {language === 'de'
+                ? 'KI-gestützt · Sofortige Antworten · 24/7'
+                : 'AI-powered · Instant answers · 24/7'}
+            </p>
+          </div>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white hover:text-gray-200 text-xl leading-none ml-2 focus:outline-none"
+            aria-label="Close chat"
+          >
+            ✕
+          </button>
+        </div>
+
+        {/* ── Message list ───────────────────────────────────────── */}
+        <div className="flex-1 overflow-y-auto p-4 bg-gray-50 space-y-3">
+          {messages.map((msg) => (
+            <div
+              key={msg.id}
+              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+            >
+              <div
+                className={`max-w-[85%] px-4 py-2.5 rounded-2xl shadow-sm ${
+                  msg.role === 'user'
+                    ? 'bg-blue-600 text-white rounded-br-sm'
+                    : 'bg-white text-gray-900 border border-gray-200 rounded-bl-sm'
+                }`}
+              >
+                <MessageContent text={msg.content} role={msg.role} />
+                <span className={`text-xs mt-1 block ${msg.role === 'user' ? 'text-blue-200' : 'text-gray-400'}`}>
+                  {msg.timestamp.toLocaleTimeString(msg.language === 'de' ? 'de-DE' : 'en-GB', {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}
+                </span>
+              </div>
+            </div>
+          ))}
+
+          {/* Typing indicator */}
+          {loading && (
+            <div className="flex justify-start">
+              <div className="bg-white border border-gray-200 px-4 py-3 rounded-2xl rounded-bl-sm shadow-sm">
+                <div className="flex space-x-1 items-center h-4">
+                  {[0, 0.15, 0.3].map((delay, i) => (
+                    <div
+                      key={i}
+                      className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"
+                      style={{ animationDelay: `${delay}s` }}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div ref={messagesEndRef} />
+        </div>
+
+        {/* ── Contact form (only shown when escalated) ────────────── */}
+        {showContactForm && !contactSubmitted && (
+          <div className="bg-amber-50 border-t border-amber-200 p-3 flex-shrink-0">
+            <p className="text-xs font-semibold text-amber-800 mb-2">
+              {language === 'de' ? '📬 Deine Kontaktdaten:' : '📬 Your contact info:'}
+            </p>
+            <div className="space-y-2">
+              <input
+                type="text"
+                placeholder={language === 'de' ? 'Name' : 'Name'}
+                value={contact.name}
+                onChange={(e) => setContact((c) => ({ ...c, name: e.target.value }))}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+              />
+              <input
+                type="email"
+                placeholder={language === 'de' ? 'E-Mail' : 'Email'}
+                value={contact.email}
+                onChange={(e) => setContact((c) => ({ ...c, email: e.target.value }))}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+              />
+              <input
+                type="tel"
+                placeholder={language === 'de' ? 'Telefon' : 'Phone'}
+                value={contact.phone}
+                onChange={(e) => setContact((c) => ({ ...c, phone: e.target.value }))}
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+              />
+              <button
+                onClick={handleContactSubmit}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold transition"
+              >
+                {language === 'de' ? 'Absenden ✓' : 'Submit ✓'}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* ── Input bar ─────────────────────────────────────────── */}
+        <div className="bg-white border-t border-gray-200 p-3 rounded-b-2xl flex-shrink-0">
+          <div className="flex gap-2">
+            <input
+              ref={inputRef}
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault()
+                  sendMessage()
+                }
+              }}
+              placeholder={
+                language === 'de'
+                  ? 'Frag nach Produkten…'
+                  : 'Ask about products…'
+              }
+              disabled={loading}
+              maxLength={2000}
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 text-sm disabled:bg-gray-100"
+            />
+            <button
+              onClick={sendMessage}
+              disabled={loading || !input.trim()}
+              className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white px-3 py-2 rounded-xl transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              aria-label="Send message"
+            >
+              {loading ? '⏳' : '➤'}
+            </button>
+          </div>
+          <p className="text-xs text-gray-400 mt-1.5 text-center">
+            {language === 'de'
+              ? '💬 Kostenlos · 🔒 Privat · ⚡ Sofort'
+              : '💬 Free · 🔒 Private · ⚡ Instant'}
+          </p>
+        </div>
+      </div>
+    </>
+  )
+}

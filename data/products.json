@@ -1,0 +1,154 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "RDX Boxing Gloves Blue 10oz",
+      "description": "Professional boxing gloves from RDX. Excellent wrist support, triple-layer foam padding. Perfect for training and sparring. Available in sizes 8oz, 10oz, 12oz, 14oz.",
+      "price": "44.99",
+      "categories": ["Boxing", "Gloves"],
+      "tags": ["boxing", "gloves", "rdx", "blue", "training"],
+      "sku": "RDX-BG-BLUE-10",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/rdx-boxing-gloves-blue-10oz",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 2,
+      "name": "Everlast Pro Style Boxing Gloves 12oz",
+      "description": "Classic Everlast Pro Style boxing gloves. Durable synthetic leather, pre-curved thumb design. Great for bag work and sparring. Sizes: 10oz, 12oz, 14oz, 16oz.",
+      "price": "52.99",
+      "categories": ["Boxing", "Gloves"],
+      "tags": ["boxing", "gloves", "everlast", "training", "sparring"],
+      "sku": "EVR-PSG-12",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/everlast-pro-style-12oz",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 3,
+      "name": "Fairtex BGV1 Muay Thai Boxing Gloves",
+      "description": "Premium Fairtex BGV1 Muay Thai boxing gloves. Genuine leather construction, contoured hook-and-loop closure. Used by professional fighters worldwide. Sizes: 10oz–16oz.",
+      "price": "119.95",
+      "categories": ["Boxing", "Muay Thai", "Gloves"],
+      "tags": ["boxing", "gloves", "fairtex", "muay thai", "premium", "leather"],
+      "sku": "FTX-BGV1",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/fairtex-bgv1-muay-thai-gloves",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 4,
+      "name": "Venum Challenger MMA Gloves",
+      "description": "Venum Challenger MMA gloves for training and competition. Premium Skintex leather, attached thumb, full palm open design. Sizes: S/M and L/XL.",
+      "price": "34.90",
+      "categories": ["MMA", "Gloves"],
+      "tags": ["mma", "gloves", "venum", "challenger", "grappling"],
+      "sku": "VNM-CHAL-MMA",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/venum-challenger-mma-gloves",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 5,
+      "name": "RDX MMA Sparring Gloves Pro",
+      "description": "RDX MMA Pro Series sparring gloves. 7oz weight, durable Maya hide leather, gel padding. Open palm design for grappling. Sizes: S/M, L/XL.",
+      "price": "29.99",
+      "categories": ["MMA", "Gloves"],
+      "tags": ["mma", "gloves", "rdx", "sparring", "grappling"],
+      "sku": "RDX-MMA-PRO-7",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/rdx-mma-sparring-gloves-pro",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 6,
+      "name": "Adidas ADISTAR Kopfschutz Headguard",
+      "description": "Adidas ADISTAR competition headguard. Meets AIBA regulations. Lightweight design with wide vision cutout. Available in S/M and L/XL.",
+      "price": "89.95",
+      "categories": ["Boxing", "Schutzausrüstung", "Kopfschutz"],
+      "tags": ["kopfschutz", "headguard", "boxing", "adidas", "competition", "schutz"],
+      "sku": "ADI-KOPF-STAR",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/adidas-adistar-kopfschutz",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 7,
+      "name": "Venum Elite Kopfschutz Headguard",
+      "description": "Venum Elite boxing headguard. Triple-density foam, adjustable rear strap and chin strap. Full coverage protection. Sizes: S/M and L/XL.",
+      "price": "74.90",
+      "categories": ["Boxing", "Kickboxing", "Schutzausrüstung", "Kopfschutz"],
+      "tags": ["kopfschutz", "headguard", "boxing", "kickboxen", "venum", "schutz"],
+      "sku": "VNM-ELITE-HEAD",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/venum-elite-kopfschutz",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 8,
+      "name": "RDX Heavy Boxing Bag 4ft",
+      "description": "RDX 4ft punching bag. Maya hide leather shell, triple-layer foam fill. Includes hanging chains and swivel. Weight approx. 30kg. Ideal for boxing, kickboxing, Muay Thai.",
+      "price": "79.99",
+      "categories": ["Boxing", "Equipment", "Sandsack"],
+      "tags": ["sandsack", "punching bag", "boxing", "rdx", "heavy bag"],
+      "sku": "RDX-BAG-4FT",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/rdx-heavy-boxing-bag-4ft",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 9,
+      "name": "Hayabusa T3 Kickboxing Shin Guards",
+      "description": "Hayabusa T3 shin guards for kickboxing and Muay Thai. Dual cross-strap closure, anatomical shaping. Full shin and instep coverage. Sizes: S, M, L, XL.",
+      "price": "69.95",
+      "categories": ["Kickboxing", "Muay Thai", "Schienbeinschützer"],
+      "tags": ["schienbeinschützer", "shin guards", "kickboxen", "muay thai", "hayabusa"],
+      "sku": "HAY-T3-SHIN",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/hayabusa-t3-shin-guards",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 10,
+      "name": "Venum Karate Gi White 8oz",
+      "description": "Venum Elite Karate Gi. 8oz cotton-polyester blend, elastic waistband pants, reinforced stitching. Available in sizes 140cm–200cm. WKF approved for competition.",
+      "price": "59.90",
+      "categories": ["Karate", "Gi", "Kampfanzug"],
+      "tags": ["karate", "gi", "anzug", "weiss", "venum", "wkf", "wettkampf"],
+      "sku": "VNM-KAR-GI-WH",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/venum-karate-gi-white",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 11,
+      "name": "RDX Zahnschutz Mundschutz Mouthguard",
+      "description": "RDX boil-and-bite mouthguard. Absorbs up to 60% of impact. Includes protective case. Fits most mouth sizes. Available in multiple colours.",
+      "price": "9.99",
+      "categories": ["Schutzausrüstung", "Zahnschutz"],
+      "tags": ["zahnschutz", "mundschutz", "mouthguard", "schutz", "rdx"],
+      "sku": "RDX-MOUTH-01",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/rdx-zahnschutz-mouthguard",
+      "scraped_at": "2026-04-01T10:00:00"
+    },
+    {
+      "id": 12,
+      "name": "Everlast Boxhandschuhe BlauRot 10oz",
+      "description": "Everlast Boxhandschuhe Klassik Serie. Blaues und rotes Design. Synthetisches Leder, C3 Foam Polsterung. Ideal für Sparring und Taschentraining. Größen: 10oz, 12oz.",
+      "price": "39.99",
+      "categories": ["Boxen", "Handschuhe"],
+      "tags": ["boxhandschuhe", "boxing", "gloves", "everlast", "blau", "rot"],
+      "sku": "EVR-BLU-RED-10",
+      "stock_status": "instock",
+      "url": "https://5elements-sports.com/everlast-boxhandschuhe-blaurot",
+      "scraped_at": "2026-04-01T10:00:00"
+    }
+  ],
+  "metadata": {
+    "total_products": 12,
+    "scraped_at": "2026-04-01T10:00:00",
+    "source": "sample-data",
+    "note": "Replace this file by running: cd backend/data_pipeline && python scrape_5elements.py"
+  }
+}
