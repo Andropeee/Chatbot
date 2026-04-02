@@ -185,7 +185,7 @@ export function ChatWidget() {
         <Toaster position="bottom-left" />
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-4 right-4 w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 z-50 focus:outline-none focus:ring-4 focus:ring-blue-300"
+          className="fixed bottom-4 right-4 w-14 h-14 bg-[#0d0d0d] text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 z-50 focus:outline-none focus:ring-4 focus:ring-[#E63B3B] border-2 border-[#E63B3B]"
           aria-label="Open chat"
           title="Chat with 5elements Support"
         >
@@ -204,21 +204,26 @@ export function ChatWidget() {
       <div
         role="dialog"
         aria-label="5elements Support Chat"
-        className="fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50"
+        className="fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50 overflow-hidden"
       >
         {/* ── Header ─────────────────────────────────────────────── */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">
-          <div>
-            <h3 className="font-bold text-lg leading-tight">5elements Support 🥊</h3>
-            <p className="text-xs text-blue-200 mt-0.5">
-              {language === 'de'
-                ? 'KI-gestützt · Sofortige Antworten · 24/7'
-                : 'AI-powered · Instant answers · 24/7'}
-            </p>
+        <div className="bg-[#0d0d0d] text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full bg-[#E63B3B] flex items-center justify-center text-lg font-bold flex-shrink-0">
+              5
+            </div>
+            <div>
+              <h3 className="font-bold text-base leading-tight">5elements Support</h3>
+              <p className="text-xs text-gray-400 mt-0.5">
+                {language === 'de'
+                  ? 'KI-gestützt · Sofortige Antworten · 24/7'
+                  : 'AI-powered · Instant answers · 24/7'}
+              </p>
+            </div>
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            className="text-white hover:text-gray-200 text-xl leading-none ml-2 focus:outline-none"
+            className="text-gray-400 hover:text-white text-xl leading-none ml-2 focus:outline-none transition-colors"
             aria-label="Close chat"
           >
             ✕
@@ -235,12 +240,12 @@ export function ChatWidget() {
               <div
                 className={`max-w-[85%] px-4 py-2.5 rounded-2xl shadow-sm ${
                   msg.role === 'user'
-                    ? 'bg-blue-600 text-white rounded-br-sm'
+                    ? 'bg-[#E63B3B] text-white rounded-br-sm'
                     : 'bg-white text-gray-900 border border-gray-200 rounded-bl-sm'
                 }`}
               >
                 <MessageContent text={msg.content} role={msg.role} />
-                <span className={`text-xs mt-1 block ${msg.role === 'user' ? 'text-blue-200' : 'text-gray-400'}`}>
+                <span className={`text-xs mt-1 block ${msg.role === 'user' ? 'text-red-200' : 'text-gray-400'}`}>
                   {msg.timestamp.toLocaleTimeString(msg.language === 'de' ? 'de-DE' : 'en-GB', {
                     hour: '2-digit',
                     minute: '2-digit',
@@ -258,7 +263,7 @@ export function ChatWidget() {
                   {[0, 0.15, 0.3].map((delay, i) => (
                     <div
                       key={i}
-                      className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"
+                      className="w-2 h-2 bg-[#E63B3B] rounded-full animate-bounce"
                       style={{ animationDelay: `${delay}s` }}
                     />
                   ))}
@@ -272,8 +277,8 @@ export function ChatWidget() {
 
         {/* ── Contact form (only shown when escalated) ────────────── */}
         {showContactForm && !contactSubmitted && (
-          <div className="bg-amber-50 border-t border-amber-200 p-3 flex-shrink-0">
-            <p className="text-xs font-semibold text-amber-800 mb-2">
+          <div className="bg-gray-900 border-t border-gray-700 p-3 flex-shrink-0">
+            <p className="text-xs font-semibold text-gray-300 mb-2">
               {language === 'de' ? '📬 Deine Kontaktdaten:' : '📬 Your contact info:'}
             </p>
             <div className="space-y-2">
@@ -282,25 +287,25 @@ export function ChatWidget() {
                 placeholder={language === 'de' ? 'Name' : 'Name'}
                 value={contact.name}
                 onChange={(e) => setContact((c) => ({ ...c, name: e.target.value }))}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-3 py-2 bg-gray-800 border border-gray-600 text-white placeholder-gray-500 rounded-lg text-sm focus:outline-none focus:border-[#E63B3B]"
               />
               <input
                 type="email"
                 placeholder={language === 'de' ? 'E-Mail' : 'Email'}
                 value={contact.email}
                 onChange={(e) => setContact((c) => ({ ...c, email: e.target.value }))}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-3 py-2 bg-gray-800 border border-gray-600 text-white placeholder-gray-500 rounded-lg text-sm focus:outline-none focus:border-[#E63B3B]"
               />
               <input
                 type="tel"
                 placeholder={language === 'de' ? 'Telefon' : 'Phone'}
                 value={contact.phone}
                 onChange={(e) => setContact((c) => ({ ...c, phone: e.target.value }))}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-3 py-2 bg-gray-800 border border-gray-600 text-white placeholder-gray-500 rounded-lg text-sm focus:outline-none focus:border-[#E63B3B]"
               />
               <button
                 onClick={handleContactSubmit}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-semibold transition"
+                className="w-full bg-[#E63B3B] hover:bg-[#C42F2F] text-white py-2 rounded-lg text-sm font-semibold transition"
               >
                 {language === 'de' ? 'Absenden ✓' : 'Submit ✓'}
               </button>
@@ -329,12 +334,12 @@ export function ChatWidget() {
               }
               disabled={loading}
               maxLength={2000}
-              className="flex-1 px-3 py-2 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 text-sm disabled:bg-gray-100"
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-xl focus:outline-none focus:border-[#E63B3B] text-sm disabled:bg-gray-100"
             />
             <button
               onClick={sendMessage}
               disabled={loading || !input.trim()}
-              className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white px-3 py-2 rounded-xl transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="bg-[#E63B3B] hover:bg-[#C42F2F] disabled:bg-gray-300 text-white px-3 py-2 rounded-xl transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-[#E63B3B]"
               aria-label="Send message"
             >
               {loading ? '⏳' : '➤'}
