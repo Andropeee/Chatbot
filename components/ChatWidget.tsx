@@ -98,10 +98,15 @@ export function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, showContactForm])
 
-  // Focus input when chat opens
+  // Focus input when chat opens; notify parent iframe host
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 100)
+      // Tell embed.js the chat is open so the iframe receives pointer events
+      if (window.parent !== window) window.parent.postMessage('chat:open', '*')
+    } else {
+      // Tell embed.js the chat is closed so the iframe is click-through again
+      if (window.parent !== window) window.parent.postMessage('chat:close', '*')
     }
   }, [isOpen])
 
