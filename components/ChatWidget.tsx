@@ -84,7 +84,7 @@ const INITIAL_MESSAGE: Message = {
   id: '0',
   role: 'bot',
   content:
-    'Hallo! 👋 Wie kann ich dir helfen?\nHello! 👋 How can I help?\n\nAsk me about our boxing gloves, MMA gear, protective equipment and more!',
+    'Hallo! 👋 Wie kann ich dir helfen?\n\nFrag mich nach Boxhandschuhen, MMA-Ausrüstung, Schutzausrüstung und mehr!',
   timestamp: new Date(),
   language: 'de',
 }
