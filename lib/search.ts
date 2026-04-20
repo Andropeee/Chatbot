@@ -115,11 +115,19 @@ function scoreProduct(product: Product, queryTerms: string[]): number {
     const variants = expandTerm(term)
 
     for (const v of variants) {
-      if (attrValues.includes(v)) score += 5   // colour/size match — highest weight
-      if (nameLower.includes(v))  score += 4
-      if (catLower.includes(v))   score += 2
-      if (tagLower.includes(v))   score += 2
-      if (descLower.includes(v))  score += 1
+      if (v.length < 2) continue
+      // Forward match: product field contains query term (e.g. "boxhandschuh" in name, query has "boxhandschuh")
+      // Reverse match: query term contains product field word (e.g. query "boxhandschuhe" contains product token "boxhandschuh")
+      const attrMatch  = attrValues.includes(v) || attrValues.split(/\s+/).some(w => w.length >= 4 && v.includes(w))
+      const nameMatch  = nameLower.includes(v)  || nameLower.split(/[\s\-]+/).some(w => w.length >= 4 && v.includes(w))
+      const catMatch   = catLower.includes(v)   || catLower.split(/\s+/).some(w => w.length >= 4 && v.includes(w))
+      const tagMatch   = tagLower.includes(v)   || tagLower.split(/\s+/).some(w => w.length >= 4 && v.includes(w))
+      const descMatch  = descLower.includes(v)  || descLower.split(/\s+/).some(w => w.length >= 5 && v.includes(w))
+      if (attrMatch)  score += 5
+      if (nameMatch)  score += 4
+      if (catMatch)   score += 2
+      if (tagMatch)   score += 2
+      if (descMatch)  score += 1
     }
 
     if (skuLower === term) score += 3
