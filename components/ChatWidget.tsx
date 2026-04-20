@@ -30,10 +30,15 @@ interface ContactInfo {
 
 function detectLanguage(text: string): Language {
   if (/[äöüÄÖÜß]/.test(text)) return 'de'
-  const textLower = text.toLowerCase()
-  const germanKw = ['habt', 'gibt', 'haben', 'größe', 'preis', 'bitte', 'danke', 'kaufen']
-  const deCount = germanKw.filter((w) => textLower.includes(w)).length
-  return deCount >= 2 ? 'de' : 'en'
+  const lower = text.toLowerCase()
+  const deHits = ['habt', 'gibt', 'haben', 'preis', 'bitte', 'danke', 'kaufen',
+    'handschuhe', 'kickboxen', 'boxen', 'karate', 'versand', 'wie', 'was', 'ich',
+    'nicht', 'auch', 'mit', 'nach', 'beim', 'sind', 'wird', 'kann', 'welche', 'welcher']
+    .filter((w) => lower.includes(w)).length
+  const enHits = ['do you', 'have', 'what', 'size', 'price', 'please', 'thank',
+    'buy', 'order', 'gloves', 'boxing', 'shipping']
+    .filter((w) => lower.includes(w)).length
+  return deHits >= enHits ? 'de' : 'en'
 }
 
 /** Render message text, making URLs clickable */
