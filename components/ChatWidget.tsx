@@ -194,12 +194,16 @@ export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
         <Toaster position="bottom-left" />
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-4 right-4 w-14 h-14 bg-[#0d0d0d] text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#E63B3B] border-2 border-[#E63B3B]"
-          style={{ zIndex: 2147483647, pointerEvents: 'auto' }}
+          className="fixed bottom-4 right-4 w-16 h-16 hover:scale-110 transition-transform focus:outline-none drop-shadow-lg"
+          style={{ zIndex: 2147483647, pointerEvents: 'auto', background: 'none', border: 'none', padding: 0 }}
           aria-label="Open chat"
           title="Chat with 5elements Support"
         >
-          💬
+          <img
+            src={`${typeof window !== 'undefined' && (window as Window & { __FIVEELEMENTS_API_BASE__?: string }).__FIVEELEMENTS_API_BASE__ || ''}/chat-bubble.png`}
+            alt="5elements Support Chat"
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+          />
         </button>
       </>
     )
