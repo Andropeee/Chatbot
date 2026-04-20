@@ -80,7 +80,7 @@ const INITIAL_MESSAGE: Message = {
   language: 'de',
 }
 
-export function ChatWidget() {
+export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE])
   const [input, setInput] = useState('')
@@ -98,15 +98,10 @@ export function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, showContactForm])
 
-  // Focus input when chat opens; notify parent iframe host
+  // Focus input when chat opens
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 100)
-      // Tell embed.js the chat is open so the iframe receives pointer events
-      if (window.parent !== window) window.parent.postMessage('chat:open', '*')
-    } else {
-      // Tell embed.js the chat is closed so the iframe is click-through again
-      if (window.parent !== window) window.parent.postMessage('chat:close', '*')
     }
   }, [isOpen])
 
@@ -129,7 +124,7 @@ export function ChatWidget() {
     setMessages((prev) => [...prev, userMsg])
 
     try {
-      const { data } = await axios.post('/api/chat', {
+      const { data } = await axios.post(`${apiBase}/api/chat`, {
         message: text,
         customer_name: contact.name || undefined,
         customer_email: contact.email || undefined,
@@ -190,7 +185,8 @@ export function ChatWidget() {
         <Toaster position="bottom-left" />
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-4 right-4 w-14 h-14 bg-[#0d0d0d] text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 z-50 focus:outline-none focus:ring-4 focus:ring-[#E63B3B] border-2 border-[#E63B3B]"
+          className="fixed bottom-4 right-4 w-14 h-14 bg-[#0d0d0d] text-white rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center text-2xl hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#E63B3B] border-2 border-[#E63B3B]"
+          style={{ zIndex: 2147483647, pointerEvents: 'auto' }}
           aria-label="Open chat"
           title="Chat with 5elements Support"
         >
@@ -209,14 +205,15 @@ export function ChatWidget() {
       <div
         role="dialog"
         aria-label="5elements Support Chat"
-        className="chat-widget fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50 overflow-hidden"
+        className="chat-widget fixed bottom-4 right-4 w-96 max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-2rem)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden"
+        style={{ zIndex: 2147483647, pointerEvents: 'auto' }}
       >
         {/* ── Header ─────────────────────────────────────────────── */}
         <div className="bg-[#0d0d0d] text-white p-4 rounded-t-2xl flex justify-between items-start flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden p-1">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logotype.png" alt="5elements logo" className="w-full h-full object-contain" />
+              <img src={`${apiBase}/logotype.png`} alt="5elements logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h3 className="font-bold text-base leading-tight">5elements Support</h3>

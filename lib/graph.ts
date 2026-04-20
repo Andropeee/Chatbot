@@ -6,6 +6,7 @@
  */
 
 import { searchProducts, formatProductContext } from './search'
+import { searchFaq, formatFaqContext } from './faq'
 
 // ════════════════════════════════════════════════════
 // LANGUAGE DETECTION
@@ -99,9 +100,11 @@ export async function agent(input: {
 }): Promise<AgentResult> {
   const language = input.language ?? detect_language(input.message)
 
-  // Step 1: Retrieve matching products
+  // Step 1: Retrieve matching products and FAQ entries
   const products = searchProducts(input.message, 5)
   const context = formatProductContext(products, language)
+  const faqEntries = searchFaq(input.message, 3)
+  const faqContext = formatFaqContext(faqEntries, language)
 
   // Step 2: Classify
   const escalated = isEscalation(input.message, language)
@@ -115,12 +118,16 @@ export async function agent(input: {
   }
 
   // Step 3b: Answer product question via DeepSeek
+  const faqSection = faqContext ? `
+
+${faqContext}` : ''
+
   const systemPrompt = language === 'de'
     ? `Du bist ein freundlicher Kundenservice-Chatbot fuer 5elements-sports.com (Kampfsport-Shop).
 Antworte auf Deutsch, kurz und hilfreich (max 120 Woerter).
 WICHTIG: Nenne NUR URLs, die EXAKT in der Produktliste unten stehen. Erfinde KEINE URLs, Kategorie-Links oder andere Links.
 Wenn Produkte gefunden wurden, zeige ihre Links auf separaten Zeilen.
-Wenn keine passenden Produkte gefunden wurden, sage ehrlich, dass du es nicht genau weisst, und empfehle dem Kunden, direkt auf https://5elements-sports.com/shop/ zu schauen oder den Kontakt aufzunehmen.
+Wenn keine passenden Produkte gefunden wurden, sage ehrlich, dass du es nicht genau weisst, und empfehle dem Kunden, direkt auf https://5elements-sports.com/shop/ zu schauen oder den Kontakt aufzunehmen.${faqSection}
 
 Verfuegbare Produkte:
 ${context}`
@@ -128,7 +135,7 @@ ${context}`
 Answer in English, briefly and helpfully (max 120 words).
 IMPORTANT: Only ever include URLs that appear EXACTLY in the product list below. Never invent URLs, category links, or any other links.
 If products were found, show their links on separate lines.
-If no matching products were found, honestly say you are not sure and recommend the customer browse https://5elements-sports.com/shop/ or get in touch.
+If no matching products were found, honestly say you are not sure and recommend the customer browse https://5elements-sports.com/shop/ or get in touch.${faqSection}
 
 Available products:
 ${context}`
