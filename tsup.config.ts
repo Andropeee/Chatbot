@@ -16,5 +16,7 @@ export default defineConfig({
   esbuildOptions(options) {
     // Resolve the @ path alias used in the project
     options.alias = { '@': '.' }
+    // Use automatic JSX runtime — no need for `import React` in every file
+    options.jsx = 'automatic'
   },
 })
