@@ -365,11 +365,6 @@ export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
               {loading ? '⏳' : '➤'}
             </button>
           </div>
-          <p className="text-xs text-gray-400 mt-1.5 text-center">
-            {language === 'de'
-              ? '💬 Kostenlos · 🔒 Privat · ⚡ Sofort'
-              : '💬 Free · 🔒 Private · ⚡ Instant'}
-          </p>
         </div>
       </div>
     </>
