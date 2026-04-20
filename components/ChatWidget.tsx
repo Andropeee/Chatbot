@@ -196,19 +196,30 @@ export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
     return (
       <>
         <Toaster position="bottom-left" />
-        <button
-          onClick={() => setIsOpen(true)}
-          className="fixed bottom-4 right-4 w-16 h-16 hover:scale-110 transition-transform focus:outline-none drop-shadow-lg"
-          style={{ zIndex: 2147483647, pointerEvents: 'auto', background: 'none', border: 'none', padding: 0 }}
-          aria-label="Open chat"
-          title="Chat with 5elements Support"
+        <div
+          className="fixed bottom-4 right-4 flex flex-col items-center gap-1 hover:scale-110 transition-transform"
+          style={{ zIndex: 2147483647, pointerEvents: 'auto' }}
         >
-          <img
-            src={`${typeof window !== 'undefined' && (window as Window & { __FIVEELEMENTS_API_BASE__?: string }).__FIVEELEMENTS_API_BASE__ || ''}/chat-bubble.png`}
-            alt="5elements Support Chat"
-            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-          />
-        </button>
+          <button
+            onClick={() => setIsOpen(true)}
+            className="w-16 h-16 focus:outline-none drop-shadow-lg"
+            style={{ background: 'none', border: 'none', padding: 0 }}
+            aria-label="Open chat"
+            title="Chat with 5elements Support"
+          >
+            <img
+              src={`${typeof window !== 'undefined' && (window as Window & { __FIVEELEMENTS_API_BASE__?: string }).__FIVEELEMENTS_API_BASE__ || ''}/chat-bubble.png`}
+              alt="5elements Support Chat"
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            />
+          </button>
+          <span
+            onClick={() => setIsOpen(true)}
+            style={{ cursor: 'pointer', fontSize: '11px', fontWeight: 600, color: '#fff', background: '#E63B3B', borderRadius: '8px', padding: '2px 8px', whiteSpace: 'nowrap', boxShadow: '0 1px 4px rgba(0,0,0,0.18)' }}
+          >
+            KI-Assistent
+          </span>
+        </div>
       </>
     )
   }
