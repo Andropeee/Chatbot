@@ -51,12 +51,13 @@ function MessageContent({ text, role }: { text: string; role: 'user' | 'bot' }) 
     return <p className="text-sm whitespace-pre-wrap">{text}</p>
   }
 
-  // Split on URLs so we can render links
+  // Strip emoji characters and split on URLs so we can render links
+  const cleanText = text.replace(/[\u{1F300}-\u{1FFFF}]|[\u{2600}-\u{27FF}]/gu, '').replace(/^[\s\n]+/, '').replace(/[\s\n]+$/g, '')
   const urlRegex = /(https?:\/\/[^\s]+)/g
-  const parts = text.split(urlRegex)
+  const parts = cleanText.split(urlRegex)
 
   return (
-    <div className="text-sm space-y-1 whitespace-pre-wrap">
+    <div className="text-sm whitespace-pre-wrap">
       {parts.map((part, i) =>
         urlRegex.test(part) ? (
           <a
@@ -64,7 +65,7 @@ function MessageContent({ text, role }: { text: string; role: 'user' | 'bot' }) 
             href={part}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline break-all block"
+            className="text-blue-600 hover:text-blue-800 underline break-all"
           >
             {part}
           </a>
