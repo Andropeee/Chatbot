@@ -33,7 +33,11 @@ function detectLanguage(text: string): Language {
   const lower = text.toLowerCase()
   const deHits = ['habt', 'gibt', 'haben', 'preis', 'bitte', 'danke', 'kaufen',
     'handschuhe', 'kickboxen', 'boxen', 'karate', 'versand', 'wie', 'was', 'ich',
-    'nicht', 'auch', 'mit', 'nach', 'beim', 'sind', 'wird', 'kann', 'welche', 'welcher']
+    'nicht', 'auch', 'mit', 'nach', 'beim', 'sind', 'wird', 'kann', 'welche', 'welcher',
+    'wo', 'finde', 'produkte', 'produkt', 'kontakt', 'kontaktieren', 'suche', 'suchen',
+    'zeig', 'zeige', 'zeigen', 'gibt es', 'habt ihr', 'kostet', 'kosten', 'verfügbar',
+    'verfuegbar', 'lieferung', 'liefern', 'bestellen', 'bestellung', 'shop', 'artikel',
+    'empfehlen', 'empfehlung', 'für', 'fuer', 'mich', 'mir', 'dein', 'euer', 'eure']
     .filter((w) => lower.includes(w)).length
   const enHits = ['do you', 'have', 'what', 'size', 'price', 'please', 'thank',
     'buy', 'order', 'gloves', 'boxing', 'shipping']
