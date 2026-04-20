@@ -51,8 +51,12 @@ function MessageContent({ text, role }: { text: string; role: 'user' | 'bot' }) 
     return <p className="text-sm whitespace-pre-wrap">{text}</p>
   }
 
-  // Strip emoji characters and split on URLs so we can render links
-  const cleanText = text.replace(/[\u{1F300}-\u{1FFFF}]|[\u{2600}-\u{27FF}]/gu, '').replace(/^[\s\n]+/, '').replace(/[\s\n]+$/g, '')
+  // Remove 🔗 and similar link emojis, collapse newlines before URLs so links stay inline
+  const cleanText = text
+    .replace(/\u{1F517}/gu, '')  // 🔗
+    .replace(/\u{1F4CE}/gu, '')  // 📎
+    .replace(/[\u{1F300}-\u{1FFFF}]/gu, '') // other emoji
+    .replace(/\s*\n+\s*(https?:\/\/)/g, ' $1') // newline before URL → space
   const urlRegex = /(https?:\/\/[^\s]+)/g
   const parts = cleanText.split(urlRegex)
 
