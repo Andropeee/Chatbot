@@ -262,11 +262,6 @@ export function getPrimaryCategory(products: Product[]): string | null {
  * Returns up to `k` results: candidates are ranked by relevance score,
  * then sorted cheapest-first (products with unknown/zero price come last).
  */
-export function searchProducts(query: string, k = 5): Product[] {
-  const products = loadProducts()
-
-  if (!products.length) return []
-
 /**
  * Known German sport-vocabulary stems, sorted longest-first for greedy matching.
  * Used to split compound query words like "Kinderboxhandschuhe" → ["kinder","boxhandschuh"].
