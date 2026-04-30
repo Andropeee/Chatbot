@@ -246,7 +246,7 @@ export function getPrimaryCategory(products: Product[]): string | null {
   if (!catCounts.size) return null
 
   // Prefer mixed-case specific categories, then sort by count descending
-  const sorted = [...catCounts.entries()].sort((a, b) => {
+  const sorted = Array.from(catCounts.entries()).sort((a, b) => {
     const aSpecific = a[0] !== a[0].toUpperCase()
     const bSpecific = b[0] !== b[0].toUpperCase()
     if (aSpecific && !bSpecific) return -1
