@@ -358,7 +358,8 @@ export function formatProductContext(products: Product[], language: 'en' | 'de')
   const header = language === 'de' ? 'Gefundene Produkte:\n\n' : 'Found products:\n\n'
 
   const lines = products.map((p) => {
-    const price = p.price ? ` — ${p.price}` : ''
+    const parsedPrice = parsePrice(p.price)
+    const price = isFinite(parsedPrice) ? ` — ${p.price}` : ''
     const url = p.url ? `\n  🔗 ${p.url}` : ''
 
     const attrLines: string[] = []
