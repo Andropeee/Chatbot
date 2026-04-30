@@ -5,7 +5,7 @@
  * Pipeline: retrieve -> classify -> answer | escalate
  */
 
-import { searchProducts, formatProductContext } from './search'
+import { searchProducts, formatProductContext, getPrimaryCategory, getCategoryUrl } from './search'
 import { searchFaq, formatFaqContext } from './faq'
 
 // ════════════════════════════════════════════════════
@@ -69,7 +69,7 @@ async function callDeepSeek(systemPrompt: string, userMessage: string): Promise<
         { role: 'user', content: userMessage },
       ],
       temperature: 0.7,
-      max_tokens: 500,
+      max_tokens: 700,
     }),
   })
 
@@ -101,10 +101,17 @@ export async function agent(input: {
   const language = input.language ?? detect_language(input.message)
 
   // Step 1: Retrieve matching products and FAQ entries
-  const products = searchProducts(input.message, 5)
+  const products = searchProducts(input.message, 8)
   const context = formatProductContext(products, language)
   const faqEntries = searchFaq(input.message, 3)
   const faqContext = formatFaqContext(faqEntries, language)
+
+  // Build category link from matched products
+  const primaryCategory = getPrimaryCategory(products)
+  const categoryUrl = primaryCategory ? getCategoryUrl(primaryCategory) : null
+  const categoryLine = language === 'de'
+    ? (categoryUrl ? `\nWeitere Artikel in dieser Kategorie finden Sie unter: ${categoryUrl}` : '')
+    : (categoryUrl ? `\nMore products in this category: ${categoryUrl}` : '')
 
   // Step 2: Classify
   const escalated = isEscalation(input.message, language)
@@ -124,20 +131,26 @@ ${faqContext}` : ''
 
   const systemPrompt = language === 'de'
     ? `Du bist ein freundlicher Kundenservice-Chatbot fuer 5elements-sports.com (Kampfsport-Shop).
-Antworte auf Deutsch, kurz und hilfreich (max 120 Woerter).
-WICHTIG: Nenne NUR URLs, die EXAKT in der Produktliste unten stehen. Erfinde KEINE URLs, Kategorie-Links oder andere Links.
-Wenn Produkte gefunden wurden, schreibe die URL direkt hinter den Produktnamen in derselben Zeile, KEIN Zeilenumbruch und KEIN Emoji vor der URL. Beispiel: 5Elements Handschuh https://5elements-sports.com/product/...
+Antworte auf Deutsch, kurz und hilfreich (max 180 Woerter).
+WICHTIG: Nenne NUR URLs, die EXAKT in der Produktliste unten stehen. Erfinde KEINE URLs ausser dem Kategorie-Link am Ende.
+Wenn Produkte gefunden wurden:
+- Liste MINDESTENS 3 Produkte auf (oder alle verfuegbaren, falls weniger als 3 gefunden wurden). Die Produkte sind bereits nach Preis sortiert (guenstigstes zuerst).
+- Schreibe die URL direkt hinter den Produktnamen in derselben Zeile, KEIN Zeilenumbruch und KEIN Emoji vor der URL. Beispiel: 5Elements Handschuh https://5elements-sports.com/product/...
+- Fuege am Ende der Antwort folgende Zeile hinzu (exakt so): "${categoryLine.trim()}"
 Wenn keine passenden Produkte gefunden wurden, sage ehrlich, dass du es nicht genau weisst, und empfehle dem Kunden, direkt auf https://5elements-sports.com/shop/ zu schauen oder den Kontakt aufzunehmen.${faqSection}
 
-Verfuegbare Produkte:
+Verfuegbare Produkte (guenstigstes zuerst):
 ${context}`
     : `You are a friendly customer service chatbot for 5elements-sports.com (martial arts shop).
-Answer in English, briefly and helpfully (max 120 words).
-IMPORTANT: Only ever include URLs that appear EXACTLY in the product list below. Never invent URLs, category links, or any other links.
-If products were found, write the URL directly after the product name on the same line, NO line break and NO emoji before the URL. Example: 5Elements Glove https://5elements-sports.com/product/...
+Answer in English, briefly and helpfully (max 180 words).
+IMPORTANT: Only ever include URLs that appear EXACTLY in the product list below. Never invent URLs except the category link at the end.
+If products were found:
+- List AT LEAST 3 products (or all available if fewer than 3 were found). Products are already sorted cheapest first.
+- Write the URL directly after the product name on the same line, NO line break and NO emoji before the URL. Example: 5Elements Glove https://5elements-sports.com/product/...
+- At the end of your answer add this line (exactly): "${categoryLine.trim()}"
 If no matching products were found, honestly say you are not sure and recommend the customer browse https://5elements-sports.com/shop/ or get in touch.${faqSection}
 
-Available products:
+Available products (cheapest first):
 ${context}`
 
   const response = await callDeepSeek(systemPrompt, input.message)
