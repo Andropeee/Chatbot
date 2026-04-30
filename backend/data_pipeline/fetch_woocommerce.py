@@ -105,28 +105,54 @@ def normalise_price(raw: str | None) -> str:
     if not raw:
         return ""
     try:
-        return f"{float(raw):.2f} €".replace(".", ",")
+        val = float(raw)
+        if val == 0:
+            return ""
+        return f"{val:.2f} €".replace(".", ",")
     except ValueError:
         return raw
 
 
 # ── Core fetch ────────────────────────────────────────────────────────────────
 
-def fetch_variations(product_id: int) -> List[Dict[str, List[str]]]:
+def fetch_variations(product_id: int) -> tuple[List[Dict[str, str]], str]:
     """
-    Return a list of attribute dicts for each variation of a variable product.
-    E.g. [{"Farbe": "Rosa", "Größe": "10oz"}, {"Farbe": "Rot", "Größe": "14oz"}, …]
+    Return (variation_list, price_display) for a variable product.
+
+    variation_list: [{"Farbe": "Rosa", "Größe": "10oz"}, …]
+    price_display:  "90,00 €"  when all variants share one price,
+                    "ab 45,00 €"  when prices differ (shows the lowest),
+                    ""  when no price info is available.
     """
     try:
         variations = collect_all_pages(f"products/{product_id}/variations")
         result = []
+        prices: List[float] = []
         for v in variations:
             attrs = {a["name"]: a["option"] for a in v.get("attributes", []) if a.get("name")}
             if attrs:
                 result.append(attrs)
-        return result
+            raw_price = v.get("price") or v.get("regular_price") or ""
+            try:
+                val = float(raw_price)
+                if val > 0:
+                    prices.append(val)
+            except (ValueError, TypeError):
+                pass
+
+        if prices:
+            min_p = min(prices)
+            max_p = max(prices)
+            if abs(max_p - min_p) < 0.01:
+                price_display = normalise_price(str(min_p))
+            else:
+                price_display = f"ab {normalise_price(str(min_p))}"
+        else:
+            price_display = ""
+
+        return result, price_display
     except requests.HTTPError:
-        return []
+        return [], ""
 
 
 def fetch_all_products() -> List[Dict]:
@@ -152,11 +178,14 @@ def fetch_all_products() -> List[Dict]:
         # Attributes declared on the parent product (all possible options)
         attributes = build_attribute_map(p.get("attributes", []))
 
-        # For variable products: fetch actual variations to get exact combos
+        # For variable products: fetch actual variations to get exact combos + prices
         variations: List[Dict] = []
         if product_type == "variable" and attributes:
             print(f"  [{idx}/{len(raw_products)}] {name} — fetching variations …")
-            variations = fetch_variations(p["id"])
+            variations, variation_price = fetch_variations(p["id"])
+            # Use variation-derived price when parent price is zero/empty
+            if variation_price and not price:
+                price = variation_price
         else:
             print(f"  [{idx}/{len(raw_products)}] {name}")
 
