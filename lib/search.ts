@@ -93,6 +93,17 @@ export function reloadProducts(): Product[] {
 }
 
 /**
+ * Check if `term` appears as a whole word (or word-prefix for plurals/inflection)
+ * inside `text`. Prevents suffix matches, e.g. "leder" must NOT match inside
+ * "kunstleder" (suffix), but SHOULD match "lederhandschuhe" (prefix start).
+ * Text is split on whitespace, hyphens and brackets before checking.
+ */
+function tokenIncludes(text: string, term: string): boolean {
+  const words = text.split(/[\s\-()\[\]\/,;]+/).filter(w => w.length > 0)
+  return words.some(w => w === term || w.startsWith(term))
+}
+
+/**
  * Score a product against a query using keyword overlap.
  *
  * Forward match  (product field directly contains the query term): full score.
@@ -132,8 +143,8 @@ function scoreProduct(product: Product, queryTerms: string[]): number {
       if (v.length < 2) continue
 
       // ── Attributes ────────────────────────────────────────────────────────
-      const attrFwd = attrValues.includes(v)
-      const attrRev = attrValues.split(/\s+/).some(w => w.length >= 5 && v.includes(w))
+      const attrFwd = tokenIncludes(attrValues, v)
+      const attrRev = !attrFwd && attrValues.split(/\s+/).some(w => w.length >= 5 && v.includes(w))
       if (attrFwd) score += 5
       else if (attrRev) score += 2
 
@@ -141,7 +152,7 @@ function scoreProduct(product: Product, queryTerms: string[]): number {
       // Forward: product name contains the query term verbatim           → +4
       // Reverse: query term contains a product-name token (compound match) → +1
       //          (minimum token length 5 to avoid short noise like "hand")
-      const nameFwd = nameLower.includes(v)
+      const nameFwd = tokenIncludes(nameLower, v)
       const nameRev = !nameFwd && nameLower.split(/[\s\-]+/).some(w => w.length >= 5 && v.includes(w))
       if (nameFwd) score += 4
       else if (nameRev) score += 1
@@ -156,13 +167,13 @@ function scoreProduct(product: Product, queryTerms: string[]): number {
       else if (catRev) score += 1
 
       // ── Tags ──────────────────────────────────────────────────────────────
-      const tagFwd = tagLower.includes(v)
+      const tagFwd = tokenIncludes(tagLower, v)
       const tagRev = !tagFwd && tagLower.split(/\s+/).some(w => w.length >= 5 && v.includes(w))
       if (tagFwd) score += 2
       else if (tagRev) score += 1
 
       // ── Description ───────────────────────────────────────────────────────
-      const descFwd = descLower.includes(v)
+      const descFwd = tokenIncludes(descLower, v)
       const descRev = !descFwd && descLower.split(/\s+/).some(w => w.length >= 5 && v.includes(w))
       if (descFwd) score += 1
       else if (descRev) score += 1
