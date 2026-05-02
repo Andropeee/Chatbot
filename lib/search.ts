@@ -342,14 +342,19 @@ export function searchProducts(query: string, k = 5): Product[] {
   // Expand each token: try German de-compounding for long compound words
   const queryTerms = rawTerms.flatMap(t => t.length >= 8 ? decompound(t) : [t])
 
-  // Take a broader pool of candidates (3× k), then sort cheapest-first
+  // Take a broader pool of candidates (3× k), then sort:
+  // Primary: score descending (more relevant first)
+  // Secondary: price ascending within the same score tier (cheapest-first as tiebreaker)
   const poolSize = Math.max(k * 3, 15)
   const scored = products
     .map((p) => ({ product: p, score: scoreProduct(p, queryTerms) }))
     .filter((s) => s.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, poolSize)
-    .sort((a, b) => parsePrice(a.product.price) - parsePrice(b.product.price))
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score
+      return parsePrice(a.product.price) - parsePrice(b.product.price)
+    })
     .slice(0, k)
     .map((s) => s.product)
 

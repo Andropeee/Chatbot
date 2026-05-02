@@ -134,23 +134,25 @@ ${faqContext}` : ''
 Antworte auf Deutsch, kurz und hilfreich (max 180 Woerter).
 WICHTIG: Nenne NUR URLs, die EXAKT in der Produktliste unten stehen. Erfinde KEINE URLs ausser dem Kategorie-Link am Ende.
 Wenn Produkte gefunden wurden:
-- Liste MINDESTENS 3 Produkte auf (oder alle verfuegbaren, falls weniger als 3 gefunden wurden). Die Produkte sind bereits nach Preis sortiert (guenstigstes zuerst).
+- Liste MINDESTENS 3 Produkte auf (oder alle verfuegbaren, falls weniger als 3 gefunden wurden). Die Produkte sind bereits nach Relevanz sortiert (teure und relevante Produkte zuerst).
+- Zeige NUR Produkte, die zum Material/Typ der Anfrage passen. Wenn der Kunde nach "Leder" fragt, zeige KEINE Produkte mit nur "Kunstleder" in der Beschreibung.
 - Schreibe die URL direkt hinter den Produktnamen in derselben Zeile, KEIN Zeilenumbruch und KEIN Emoji vor der URL. Beispiel: 5Elements Handschuh https://5elements-sports.com/product/...
 - Fuege am Ende der Antwort folgende Zeile hinzu (exakt so): "${categoryLine.trim()}"
 Wenn keine passenden Produkte gefunden wurden, sage ehrlich, dass du es nicht genau weisst, und empfehle dem Kunden, direkt auf https://5elements-sports.com/shop/ zu schauen oder den Kontakt aufzunehmen.${faqSection}
 
-Verfuegbare Produkte (guenstigstes zuerst):
+Verfuegbare Produkte (relevanteste zuerst):
 ${context}`
     : `You are a friendly customer service chatbot for 5elements-sports.com (martial arts shop).
 Answer in English, briefly and helpfully (max 180 words).
 IMPORTANT: Only ever include URLs that appear EXACTLY in the product list below. Never invent URLs except the category link at the end.
 If products were found:
-- List AT LEAST 3 products (or all available if fewer than 3 were found). Products are already sorted cheapest first.
+- List AT LEAST 3 products (or all available if fewer than 3 were found). Products are sorted by relevance.
+- Only show products that match the material/type the customer asked for. If they ask for "Leder" (genuine leather), do NOT show products described as "Kunstleder" (synthetic leather).
 - Write the URL directly after the product name on the same line, NO line break and NO emoji before the URL. Example: 5Elements Glove https://5elements-sports.com/product/...
 - At the end of your answer add this line (exactly): "${categoryLine.trim()}"
 If no matching products were found, honestly say you are not sure and recommend the customer browse https://5elements-sports.com/shop/ or get in touch.${faqSection}
 
-Available products (cheapest first):
+Available products (most relevant first):
 ${context}`
 
   const response = await callDeepSeek(systemPrompt, input.message)
