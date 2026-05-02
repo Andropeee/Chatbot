@@ -66,8 +66,6 @@ function MessageContent({ text, role }: { text: string; role: 'user' | 'bot' }) 
           <a
             key={i}
             href={part}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 underline break-all"
           >
             {part}
