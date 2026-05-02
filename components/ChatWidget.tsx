@@ -91,9 +91,22 @@ const INITIAL_MESSAGE: Message = {
   language: 'de',
 }
 
+const STORAGE_KEY = '5el_chat_messages'
+
+function loadStoredMessages(): Message[] {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY)
+    if (!raw) return [INITIAL_MESSAGE]
+    const parsed = JSON.parse(raw) as Array<Message & { timestamp: string }>
+    return parsed.map((m) => ({ ...m, timestamp: new Date(m.timestamp) }))
+  } catch {
+    return [INITIAL_MESSAGE]
+  }
+}
+
 export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE])
+  const [messages, setMessages] = useState<Message[]>(() => loadStoredMessages())
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [language, setLanguage] = useState<Language>('de')
@@ -103,6 +116,13 @@ export function ChatWidget({ apiBase = '' }: { apiBase?: string }) {
 
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+
+  // Persist messages to sessionStorage whenever they change
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(messages))
+    } catch { /* ignore quota errors */ }
+  }, [messages])
 
   // Auto-scroll to bottom when messages change
   useEffect(() => {
